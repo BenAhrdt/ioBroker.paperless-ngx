@@ -41,18 +41,23 @@ class PaperlessNgx extends utils.Adapter {
 	 * Is called when databases are connected and adapter received configuration.
 	 */
 	async onReady() {
-		// Subscribe internal writefunctions
-		this.subscribeStatesAsync("search.*.query*");
-		this.subscribeStatesAsync("control.requestTrigger");
-
-		// Reset the connection indicator during startup
-		this.setState("info.connection", true, true);
-
 		this.paperlessCommunication = new paperlesscommunicationClass(this);
-		await this.paperlessCommunication.readActualData();
-		await this.setIdle();
+		if(await this.paperlessCommunication.checkConnection()){
+			// Subscribe internal writefunctions
+			this.subscribeStatesAsync("search.*.query*");
+			this.subscribeStatesAsync("control.requestTrigger");
 
-		this.cronJobs[this.cronJobIds.refreshCycle] = schedule.scheduleJob(this.config.refreshCycle,this.readActualDataCyclic.bind(this));
+			// Reset the connection indicator during startup
+			this.setState("info.connection", true, true);
+
+			await this.paperlessCommunication.readActualData();
+			await this.setIdle();
+
+			this.cronJobs[this.cronJobIds.refreshCycle] = schedule.scheduleJob(this.config.refreshCycle,this.readActualDataCyclic.bind(this));
+		}
+		else{
+			this.log.error("No active connection to paperless API");
+		}
 	}
 
 	async readActualDataCyclic(){
