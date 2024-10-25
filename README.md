@@ -18,7 +18,7 @@ paperless-ngx API to get information of running instances from paperless-ngx
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.2 (2024-10-25)
 * catching config of wrong API Adress
 
 ### 0.1.1 (2024-10-24)
