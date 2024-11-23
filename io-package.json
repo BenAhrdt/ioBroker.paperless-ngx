@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "news": {
+      "0.1.3": {
+        "en": "implemt tag and blocked tag search / insert comments",
+        "de": "implemt tag und blockiert tag search / kommentare einfügen",
+        "ru": "неповрежденный тег и заблокирован поиск тега / вставить комментарии",
+        "pt": "implemt tag e bloqueio de busca de tags / inserir comentários",
+        "nl": "uitvoeren van tag en geblokkeerde tag zoeken / commentaar toevoegen",
+        "fr": "implemt tag et bloqué tag recherche / insérer des commentaires",
+        "it": "implemt tag e bloccato tag ricerca / inserire commenti",
+        "es": "implemt tag y bloqueado tag search / insertar comentarios",
+        "pl": "implemt tag i zablokowany tag wyszukiwania / wstawiania komentarzy",
+        "uk": "implemt тег і заблокований пошук тегів / вставки коментарів",
+        "zh-cn": "impmt 标签和被屏蔽的标签搜索 / 插入注释"
+      },
       "0.1.2": {
         "en": "catching config of wrong API Adress",
         "de": "zugriff auf falsche API Adresse",
@@ -80,19 +93,6 @@
         "pl": "dodany bieżący krok",
         "uk": "додано поточний крок",
         "zh-cn": "添加当前步骤"
-      },
-      "0.0.12": {
-        "en": "Implekents \"all\" to some folders",
-        "de": "Implekents \"all\" zu einigen Ordnern",
-        "ru": "Иллекенты «все» к некоторым папкам",
-        "pt": "Implekents \"tudo\" para algumas pastas",
-        "nl": "Implekens \"alle\" naar sommige mappen",
-        "fr": "Implekents \"all\" dans certains dossiers",
-        "it": "Implessi \"tutti\" in alcune cartelle",
-        "es": "Implekents \"all\" a algunas carpetas",
-        "pl": "Wdrożenie \"all\" do niektórych folderów",
-        "uk": "Implekents \"all\" до деяких папок",
-        "zh-cn": "将“ 所有” 插入到一些文件夹"
       }
     },
     "titleLang": {
