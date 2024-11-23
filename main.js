@@ -137,20 +137,30 @@ class PaperlessNgx extends utils.Adapter {
 					else if(id.indexOf("documents") !== -1){
 						if(id.endsWith("query")){
 							const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
+							const blockedTags = await this.getStateAsync(`${this.namespace}.search.documents.queryBlockedTags`);
 							const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
-							await this.paperlessCommunication?.sendDocumentsSearchQuery(state.val,tags?.val,allTags?.val);
+							await this.paperlessCommunication?.sendDocumentsSearchQuery(state.val,tags?.val,blockedTags?.val,allTags?.val);
 							await this.setIdle();
 						}
 						if(id.endsWith("queryTags")){
 							const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
+							const blockedTags = await this.getStateAsync(`${this.namespace}.search.documents.queryBlockedTags`);
 							const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
-							await this.paperlessCommunication?.sendDocumentsSearchQuery(query?.val,state.val,allTags?.val);
+							await this.paperlessCommunication?.sendDocumentsSearchQuery(query?.val,state.val,blockedTags?.val,allTags?.val);
+							await this.setIdle();
+						}
+						if(id.endsWith("queryBlockedTags")){
+							const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
+							const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
+							const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
+							await this.paperlessCommunication?.sendDocumentsSearchQuery(query?.val,tags?.val,state.val,allTags?.val);
 							await this.setIdle();
 						}
 						if(id.endsWith("queryAllTags")){
 							const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
 							const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
-							await this.paperlessCommunication?.sendDocumentsSearchQuery(query?.val,tags?.val,state.val);
+							const blockedTags = await this.getStateAsync(`${this.namespace}.search.documents.queryBlockedTags`);
+							await this.paperlessCommunication?.sendDocumentsSearchQuery(query?.val,tags?.val,blockedTags?.val,state.val);
 							await this.setIdle();
 						}
 					}

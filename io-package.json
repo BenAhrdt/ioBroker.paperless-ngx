@@ -260,6 +260,18 @@
       "native": {}
     },
     {
+      "_id": "search.documents.queryBlockedTags",
+      "type": "state",
+      "common": {
+        "name": "query of document search (blocked tags)",
+        "type": "array",
+        "role": "value",
+        "icon": "img/query.png",
+        "default": []
+      },
+      "native": {}
+    },
+    {
       "_id": "search.documents.queryAllTags",
       "type": "state",
       "common": {
