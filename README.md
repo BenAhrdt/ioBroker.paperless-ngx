@@ -19,7 +19,7 @@ paperless-ngx API to get information of running instances from paperless-ngx
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) implemt tag and blocked tag search
+* (BenAhrdt) implemt tag and blocked tag search / insert comments
 
 ### 0.1.2 (2024-10-25)
 * catching config of wrong API Adress
