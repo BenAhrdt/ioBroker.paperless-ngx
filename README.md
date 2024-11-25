@@ -11,13 +11,23 @@
 [![NPM](https://nodei.co/npm/iobroker.paperless-ngx.png?downloads=true)](https://nodei.co/npm/iobroker.paperless-ngx/)
 
 ## paperless-ngx adapter for ioBroker
-paperless-ngx API to get information of running instances from paperless-ngx
+paperless-ngx API to get information of running instances from paperless-ngx.
+For instance, you can read the tags, documents, document-types, user or correspondents of the paperless instance.
+
+set the following data to login to the instance:
+![alt text](image.png)
+
+select the refresh cycle and the type of reading data: (without, basic oder detailed)
+![alt text](image-1.png)
 
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) add responsive tags for xs, s, l .... to json config
+
 ### 0.1.3 (2024-11-23)
 * (BenAhrdt) implemt tag and blocked tag search / insert comments
 
