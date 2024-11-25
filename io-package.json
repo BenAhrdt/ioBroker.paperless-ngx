@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "news": {
+      "0.1.4": {
+        "en": "add responsive tags for xs, s, l .... to json config",
+        "de": "kompatible tags für xs, s, l .... zu json config hinzufügen",
+        "ru": "добавить адаптивные теги для xs, s, l... к конфигурации json",
+        "pt": "adicionar tags responsivas para xs, s, l... para json config",
+        "nl": "responsieve tags voor xs, s, l .... toevoegen aan json config",
+        "fr": "ajouter des balises réactives pour xs, s, l .... à json config",
+        "it": "aggiungere tag reattivi per xs, s, l .... a json config",
+        "es": "añadir etiquetas de respuesta para xs, s, l .... a json config",
+        "pl": "dodaj odpowiednie znaczniki dla xs, s, l.... do json config",
+        "uk": "до json config",
+        "zh-cn": "在 json 配置中添加 xs, s, l... 的响应标记"
+      },
       "0.1.3": {
         "en": "implemt tag and blocked tag search / insert comments",
         "de": "implemt tag und blockiert tag search / kommentare einfügen",
@@ -80,19 +93,6 @@
         "pl": "dodaj słowo kluczowe joBroker do pakietu. json",
         "uk": "додати ключове слово ioBroker до пакету. свінгери",
         "zh-cn": "在软件包中添加关键字 ioBroker 。 贾森"
-      },
-      "0.0.13": {
-        "en": "added current step",
-        "de": "strom schritt",
-        "ru": "дополнительный текущий шаг",
-        "pt": "passo atual adicionado",
-        "nl": "huidige stap toevoegen",
-        "fr": "ajout de l'étape actuelle",
-        "it": "passo corrente aggiunto",
-        "es": "paso actual",
-        "pl": "dodany bieżący krok",
-        "uk": "додано поточний крок",
-        "zh-cn": "添加当前步骤"
       }
     },
     "titleLang": {

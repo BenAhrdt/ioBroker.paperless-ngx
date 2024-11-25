@@ -25,7 +25,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.4 (2024-11-25)
 * (BenAhrdt) add responsive tags for xs, s, l .... to json config
 
 ### 0.1.3 (2024-11-23)
