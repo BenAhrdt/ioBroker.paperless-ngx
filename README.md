@@ -25,7 +25,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.2.0 (2024-12-05)
 * (BenAhrdt) update eslint
 
 ### 0.1.4 (2024-11-25)

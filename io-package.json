@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "news": {
+      "0.2.0": {
+        "en": "update eslint",
+        "de": "update eslint",
+        "ru": "обновление eslint",
+        "pt": "atualização eslint",
+        "nl": "eslint bijwerken",
+        "fr": "mettre à jour eslint",
+        "it": "aggiornamento eslint",
+        "es": "update eslint",
+        "pl": "update eslint",
+        "uk": "оновлення eslint",
+        "zh-cn": "更新埃斯林特"
+      },
       "0.1.4": {
         "en": "add responsive tags for xs, s, l .... to json config",
         "de": "kompatible tags für xs, s, l .... zu json config hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "zmiany dotyczące bota kontrolnego i serwisowego",
         "uk": "зміни для перевірки та сервісу",
         "zh-cn": "检查和服务机器人的更改"
-      },
-      "0.0.14": {
-        "en": "add keyword ioBroker to package.json",
-        "de": "keyword ioBroker zum Paket hinzufügen. Json",
-        "ru": "добавить ioBroker по ключевым словам в пакет. json",
-        "pt": "adicionar palavra-chave ioBroker ao pacote. O que foi",
-        "nl": "trefwoord ioBroker toevoegen aan pakket. json",
-        "fr": "ajouter le mot clé ioBroker au paquet. Json",
-        "it": "aggiungere la parola chiave ioBroker al pacchetto. J",
-        "es": "añadir keyword ioBroker al paquete. json",
-        "pl": "dodaj słowo kluczowe joBroker do pakietu. json",
-        "uk": "додати ключове слово ioBroker до пакету. свінгери",
-        "zh-cn": "在软件包中添加关键字 ioBroker 。 贾森"
       }
     },
     "titleLang": {
