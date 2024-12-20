@@ -10,6 +10,8 @@
 
 [![NPM](https://nodei.co/npm/iobroker.paperless-ngx.png?downloads=true)](https://nodei.co/npm/iobroker.paperless-ngx/)
 
+* Official Papaerless-ngx website: https://docs.paperless-ngx.com/
+
 ## paperless-ngx adapter for ioBroker
 paperless-ngx API to get information of running instances from paperless-ngx.
 For instance, you can read the tags, documents, document-types, user or correspondents of the paperless instance.
@@ -25,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) replace forbidden chars with "_" and add timeout 3000ms to axios
+
 ### 0.2.0 (2024-12-05)
 * (BenAhrdt) update eslint
 
