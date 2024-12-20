@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "news": {
+      "0.2.1": {
+        "en": "replace forbidden chars with \"_\" and add timeout 3000ms to axios",
+        "de": "ersetzen verbotene wagen mit \"_\" und fügen sie timeout 3000ms zu axios",
+        "ru": "заменить запрещенные шары на \"_\" и добавить таймаут 3000ms к axios",
+        "pt": "substitua chars proibidos com \"_\" e adicione timeout 3000ms ao axios",
+        "nl": "vervang verboden tekens door \"_\" en voeg timeout 3000ms toe aan axios",
+        "fr": "remplacer les caractères interdits par \"_\" et ajouter 3000ms à l'axios",
+        "it": "sostituire i carboni vietati con \"_\" e aggiungere un timeout 3000m all'assios",
+        "es": "sustituir los charcos prohibidos por \"_\" y añadir tiempoout 3000m a axios",
+        "pl": "zastąpić zakazane znaki znakiem \"_\" i dodać timeout 3000ms do axios",
+        "uk": "замінити заборонені chars з \"_\" і додати час 3000ms в axios",
+        "zh-cn": "将禁用字符替换为“ _ ” , 并将超时3 000ms添加到轴中"
+      },
       "0.2.0": {
         "en": "update eslint",
         "de": "update eslint",
@@ -80,19 +93,6 @@
         "pl": "Pierwsza implementacja wyszukiwania w dokumentach z określonymi tagami",
         "uk": "Перша реалізація пошуку документів з певними тегами",
         "zh-cn": "首次在带有特定标签的文档中搜索"
-      },
-      "0.0.15": {
-        "en": "changes for check and service bot",
-        "de": "änderungen für check- und service-bot",
-        "ru": "изменения для проверки и обслуживания бота",
-        "pt": "alterações para verificação e serviço bot",
-        "nl": "wijzigingen voor controle en service bot",
-        "fr": "modifications pour vérifier et service bot",
-        "it": "modifiche per check e service bot",
-        "es": "cambios para cheque y servicio bot",
-        "pl": "zmiany dotyczące bota kontrolnego i serwisowego",
-        "uk": "зміни для перевірки та сервісу",
-        "zh-cn": "检查和服务机器人的更改"
       }
     },
     "titleLang": {
