@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "news": {
+      "0.3.0": {
+        "en": "update admin and js-controller depencies",
+        "de": "admin- und js-controller-depencies aktualisieren",
+        "ru": "обновление admin и js-контроллеров",
+        "pt": "atualizar as competências admin e js-controller",
+        "nl": "update admin en js-controller capaciteiten",
+        "fr": "mettre à jour les dépences de l'administrateur et du contrôleur js",
+        "it": "aggiorna le depene di amministrazione e di controllo js",
+        "es": "actualización de los modos de administración y js-controller",
+        "pl": "aktualizacja zależności administratora i kontrolera js-",
+        "uk": "оновлення адмін і js-controller depencies",
+        "zh-cn": "更新管理者和js控制器账户"
+      },
       "0.2.1": {
         "en": "replace forbidden chars with \"_\" and add timeout 3000ms to axios",
         "de": "ersetzen verbotene wagen mit \"_\" und fügen sie timeout 3000ms zu axios",
@@ -80,19 +93,6 @@
         "pl": "implikacje korespondentów",
         "uk": "імпленти кореспонденти",
         "zh-cn": "无法通讯员"
-      },
-      "0.1.0": {
-        "en": "First implementation of searching in documents with specific tags",
-        "de": "Erste Implementierung der Suche in Dokumenten mit bestimmten Tags",
-        "ru": "Первая реализация поиска в документах с конкретными тегами",
-        "pt": "Primeira implementação de pesquisa em documentos com tags específicas",
-        "nl": "Eerste implementatie van zoeken in documenten met specifieke tags",
-        "fr": "Première mise en œuvre de la recherche dans des documents avec des balises spécifiques",
-        "it": "Prima implementazione della ricerca in documenti con tag specifici",
-        "es": "Primera implementación de búsqueda en documentos con etiquetas específicas",
-        "pl": "Pierwsza implementacja wyszukiwania w dokumentach z określonymi tagami",
-        "uk": "Перша реалізація пошуку документів з певними тегами",
-        "zh-cn": "首次在带有特定标签的文档中搜索"
       }
     },
     "titleLang": {
