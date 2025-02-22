@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update admin and js-controller depencies
+
 ### 0.2.1 (2024-12-20)
 * (BenAhrdt) replace forbidden chars with "_" and add timeout 3000ms to axios
 
