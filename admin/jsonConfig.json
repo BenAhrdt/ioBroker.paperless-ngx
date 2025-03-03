@@ -46,7 +46,7 @@
 					"type": "number",
 					"label": "port",
 					"tooltip": "portTooltip",
-					"default": 8888,
+					"default": 8000,
 					"xs": 12,
 					"sm": 1,
 					"md": 1,
@@ -110,7 +110,7 @@
 					"xl": 3
 				},
 				"token":{
-					"type": "token",
+					"type": "password",
 					"label": "token",
 					"tooltip": "tokenTooltip",
 					"default": "",

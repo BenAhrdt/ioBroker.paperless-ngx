@@ -168,6 +168,8 @@
     "token"
   ],
   "native": {
+    "ipUrl": "",
+    "port": 8000,
     "username": "",
     "password": "",
     "useToken": false,
