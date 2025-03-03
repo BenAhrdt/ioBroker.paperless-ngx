@@ -31,5 +31,8 @@
     "usersLoglevel": "utenti",
     "usersLoglevelTooltip": "selezionare la casella di controllo per leggere gli utenti",
     "correspondentsLoglevel": "corrispondenti",
-    "correspondentsLoglevelTooltip": "selezionare la casella di controllo per leggere i corrispondenti"
+    "correspondentsLoglevelTooltip": "selezionare la casella di controllo per leggere i corrispondenti",
+    "useToken": "Usa il token",
+    "token": "gettone",
+    "tokeTooltip": "Seleziona per utilizzare il token invece Nome utente e password"
 }

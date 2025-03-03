@@ -31,5 +31,8 @@
     "usersLoglevel": "usuarios",
     "usersLoglevelTooltip": "seleccione la casilla de verificación para leer los usuarios",
     "correspondentsLoglevel": "corresponsales",
-    "correspondentsLoglevelTooltip": "seleccione la casilla de verificación para leer los corresponsales"
+    "correspondentsLoglevelTooltip": "seleccione la casilla de verificación para leer los corresponsales",
+    "useToken": "Usar token",
+    "token": "simbólico",
+    "tokeTooltip": "Seleccione usar token en su lugar, nombre de usuario y contraseña"
 }

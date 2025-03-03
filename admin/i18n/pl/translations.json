@@ -31,5 +31,8 @@
     "usersLoglevel": "użytkownicy",
     "usersLoglevelTooltip": "zaznacz pole wyboru do odczytu użytkowników",
     "correspondentsLoglevel": "korespondenci",
-    "correspondentsLoglevelTooltip": "zaznacz pole wyboru, aby odczytać korespondentów"
+    "correspondentsLoglevelTooltip": "zaznacz pole wyboru, aby odczytać korespondentów",
+    "useToken": "Użyj tokenu",
+    "token": "znak",
+    "tokeTooltip": "Wybierz, aby użyć tokenu nazwy użytkownika i hasła"
 }

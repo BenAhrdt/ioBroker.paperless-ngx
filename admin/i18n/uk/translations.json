@@ -31,5 +31,8 @@
     "usersLoglevel": "користувачів",
     "usersLoglevelTooltip": "установіть прапорець для зчитування користувачів",
     "correspondentsLoglevel": "кореспондентів",
-    "correspondentsLoglevelTooltip": "установіть прапорець для зчитування респондентів"
+    "correspondentsLoglevelTooltip": "установіть прапорець для зчитування респондентів",
+    "useToken": "Використовуйте маркер",
+    "token": "маркер",
+    "tokeTooltip": "Виберіть, щоб використовувати маркер натомість ім'я користувача та пароль"
 }

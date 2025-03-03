@@ -31,5 +31,8 @@
 	"usersLoglevel": "users",
 	"usersLoglevelTooltip": "select checkbox for readout the users",
 	"correspondentsLoglevel": "correspondents",
-	"correspondentsLoglevelTooltip": "select checkbox for readout the conrrespondents"
+	"correspondentsLoglevelTooltip": "select checkbox for readout the conrrespondents",
+	"useToken": "use token",
+	"token": "token",
+	"tokeTooltip": "select to use token instead username and password"
 }

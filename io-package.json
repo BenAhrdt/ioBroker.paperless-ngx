@@ -160,14 +160,16 @@
     ]
   },
   "encryptedNative": [
-    "password"
+    "token"
   ],
   "protectedNative": [
-    "password"
+    "token"
   ],
   "native": {
     "username": "",
     "password": "",
+    "useToken": false,
+    "token": "",
     "refreshCycle": "*/15 * * * *",
     "tagsLoglevel": 2,
     "documentsLoglevel": 0,

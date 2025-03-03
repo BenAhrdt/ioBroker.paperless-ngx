@@ -31,5 +31,8 @@
     "usersLoglevel": "пользователи",
     "usersLoglevelTooltip": "установите флажок для считывания пользователей",
     "correspondentsLoglevel": "корреспонденты",
-    "correspondentsLoglevelTooltip": "установите флажок для считывания собеседников"
+    "correspondentsLoglevelTooltip": "установите флажок для считывания собеседников",
+    "useToken": "Используйте токен",
+    "token": "токен",
+    "tokeTooltip": "Выберите, чтобы использовать токен вместо имени пользователя и пароля"
 }

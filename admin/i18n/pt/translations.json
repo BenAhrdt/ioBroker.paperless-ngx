@@ -31,5 +31,8 @@
     "usersLoglevel": "Usuários",
     "usersLoglevelTooltip": "marque a caixa de seleção para ler os usuários",
     "correspondentsLoglevel": "correspondentes",
-    "correspondentsLoglevelTooltip": "marque a caixa de seleção para ler os correspondentes"
+    "correspondentsLoglevelTooltip": "marque a caixa de seleção para ler os correspondentes",
+    "useToken": "Use token",
+    "token": "token",
+    "tokeTooltip": "Selecione usar token em vez de nome de usuário e senha"
 }

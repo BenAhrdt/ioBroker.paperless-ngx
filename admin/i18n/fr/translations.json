@@ -31,5 +31,8 @@
     "usersLoglevel": "utilisateurs",
     "usersLoglevelTooltip": "cochez la case pour lire les utilisateurs",
     "correspondentsLoglevel": "correspondants",
-    "correspondentsLoglevelTooltip": "cochez la case pour lire les correspondants"
+    "correspondentsLoglevelTooltip": "cochez la case pour lire les correspondants",
+    "useToken": "usage de jeton",
+    "token": "jeton",
+    "tokeTooltip": "Sélectionnez pour utiliser le token à la place du nom d'utilisateur et du mot de passe"
 }

@@ -31,5 +31,8 @@
     "usersLoglevel": "Benutzer",
     "usersLoglevelTooltip": "Aktivieren Sie die Checkbox zum Auslesen der Benutzer",
     "correspondentsLoglevel": "Korrespondenten",
-    "correspondentsLoglevelTooltip": "Aktivieren Sie die Checkbox zum Auslesen der Korrespondenten"
+    "correspondentsLoglevelTooltip": "Aktivieren Sie die Checkbox zum Auslesen der Korrespondenten",
+    "useToken": "Token verwenden",
+    "token": "Token",
+    "tokeTooltip": "Anwählen, um Token anstatt Benutzername und Passwort zu verwenden"
 }

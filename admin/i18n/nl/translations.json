@@ -31,5 +31,8 @@
     "usersLoglevel": "gebruikers",
     "usersLoglevelTooltip": "selecteer het selectievakje om de gebruikers uit te lezen",
     "correspondentsLoglevel": "correspondenten",
-    "correspondentsLoglevelTooltip": "selecteer het selectievakje om de correspondenten uit te lezen"
+    "correspondentsLoglevelTooltip": "selecteer het selectievakje om de correspondenten uit te lezen",
+    "useToken": "Gebruik token",
+    "token": "boord",
+    "tokeTooltip": "Selecteer om token te gebruiken in plaats daarvan gebruikersnaam en wachtwoord"
 }

@@ -31,5 +31,8 @@
     "usersLoglevel": "用户",
     "usersLoglevelTooltip": "选择复选框以读出用户",
     "correspondentsLoglevel": "记者",
-    "correspondentsLoglevelTooltip": "选择复选框以读出通讯员"
+    "correspondentsLoglevelTooltip": "选择复选框以读出通讯员",
+    "useToken": "使用令牌",
+    "token": "令牌",
+    "tokeTooltip": "选择要使用令牌代替用户名和密码"
 }
