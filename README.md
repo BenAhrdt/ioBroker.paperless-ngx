@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) Search logic for and / or improoved
+
 ### 0.4.0 (2025-03-03)
 * (BenAhrdt) Implement Token
 
