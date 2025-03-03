@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "news": {
+      "0.4.1": {
+        "en": "Search logic for and / or improoved",
+        "de": "Suchlogik für und / oder improoviert",
+        "ru": "Логика поиска и/или импровизация",
+        "pt": "Procurar lógica para e / ou improoved",
+        "nl": "Zoeklogica voor en / of geïmproviseerd",
+        "fr": "Logique de recherche et / ou improoved",
+        "it": "Ricerca logica per e/o improbabile",
+        "es": "Buscar lógica para / o improvisado",
+        "pl": "Szukaj logiki i / lub improused",
+        "uk": "Пошук логіки для і / або імпрововані",
+        "zh-cn": "搜索逻辑 和 / 或未启动"
+      },
       "0.4.0": {
         "en": "Implement Token",
         "de": "Implementieren Token",
@@ -80,19 +93,6 @@
         "pl": "implemt tag i zablokowany tag wyszukiwania / wstawiania komentarzy",
         "uk": "implemt тег і заблокований пошук тегів / вставки коментарів",
         "zh-cn": "impmt 标签和被屏蔽的标签搜索 / 插入注释"
-      },
-      "0.1.2": {
-        "en": "catching config of wrong API Adress",
-        "de": "zugriff auf falsche API Adresse",
-        "ru": "ловить настройку неправильного API Adress",
-        "pt": "catching config of wrong API Endereço",
-        "nl": "configuratie van verkeerde API-adres vangen",
-        "fr": "capturer la configuration de l'API mal Adresse",
-        "it": "catching config of wrong API Adress",
-        "es": "capturar config de mal API Dirección",
-        "pl": "catching config of wrong API Adress",
-        "uk": "налаштування неправильного API Adress",
-        "zh-cn": "抓取错误 API 服装的配置"
       }
     },
     "titleLang": {
