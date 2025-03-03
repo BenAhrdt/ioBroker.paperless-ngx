@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "news": {
+      "0.4.0": {
+        "en": "Implement Token",
+        "de": "Implementieren Token",
+        "ru": "Скачать Token",
+        "pt": "Token de implementação",
+        "nl": "Token uitvoeren",
+        "fr": "Mettre en œuvre le jeton",
+        "it": "Attuazione Token",
+        "es": "Token de aplicación",
+        "pl": "Wdrożenie programu Token",
+        "uk": "Реалізація токени",
+        "zh-cn": "执行托肯"
+      },
       "0.3.0": {
         "en": "update admin and js-controller depencies",
         "de": "admin- und js-controller-depencies aktualisieren",
@@ -80,19 +93,6 @@
         "pl": "catching config of wrong API Adress",
         "uk": "налаштування неправильного API Adress",
         "zh-cn": "抓取错误 API 服装的配置"
-      },
-      "0.1.1": {
-        "en": "implents correspondents",
-        "de": "implents korrespondenten",
-        "ru": "корреспонденты",
-        "pt": "correspondentes implentes",
-        "nl": "uitvoeringscorrespondenten",
-        "fr": "correspondants chargés",
-        "it": "corrispettivi",
-        "es": "corresponsales implents",
-        "pl": "implikacje korespondentów",
-        "uk": "імпленти кореспонденти",
-        "zh-cn": "无法通讯员"
       }
     },
     "titleLang": {
