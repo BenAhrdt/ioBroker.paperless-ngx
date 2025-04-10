@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "news": {
+      "0.4.2": {
+        "en": "logging in case of no connection improoved",
+        "de": "protokollierung, falls keine verbindung improoviert",
+        "ru": "лесозаготовки в случае отсутствия подсоединения",
+        "pt": "registro no caso de nenhuma conexão improoved",
+        "nl": "loggen in geval van geen verbinding geïmproviseerd",
+        "fr": "l'enregistrement en cas d'absence de connexion",
+        "it": "logging in caso di assenza di connessione",
+        "es": "registro en caso de no conexión improvisada",
+        "pl": "logowanie w przypadku braku połączenia improused",
+        "uk": "в разі відсутності з'єднання",
+        "zh-cn": "无法连接时进行记录"
+      },
       "0.4.1": {
         "en": "Search logic for and / or improoved",
         "de": "Suchlogik für und / oder improoviert",
@@ -80,19 +93,6 @@
         "pl": "dodaj odpowiednie znaczniki dla xs, s, l.... do json config",
         "uk": "до json config",
         "zh-cn": "在 json 配置中添加 xs, s, l... 的响应标记"
-      },
-      "0.1.3": {
-        "en": "implemt tag and blocked tag search / insert comments",
-        "de": "implemt tag und blockiert tag search / kommentare einfügen",
-        "ru": "неповрежденный тег и заблокирован поиск тега / вставить комментарии",
-        "pt": "implemt tag e bloqueio de busca de tags / inserir comentários",
-        "nl": "uitvoeren van tag en geblokkeerde tag zoeken / commentaar toevoegen",
-        "fr": "implemt tag et bloqué tag recherche / insérer des commentaires",
-        "it": "implemt tag e bloccato tag ricerca / inserire commenti",
-        "es": "implemt tag y bloqueado tag search / insertar comentarios",
-        "pl": "implemt tag i zablokowany tag wyszukiwania / wstawiania komentarzy",
-        "uk": "implemt тег і заблокований пошук тегів / вставки коментарів",
-        "zh-cn": "impmt 标签和被屏蔽的标签搜索 / 插入注释"
       }
     },
     "titleLang": {
