@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) added more debug logging
+
 ### 0.4.2 (2025-04-10)
 * (BenAhrdt) logging in case of no connection improoved
 
