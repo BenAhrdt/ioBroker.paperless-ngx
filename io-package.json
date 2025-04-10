@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "news": {
+      "0.4.3": {
+        "en": "added more debug logging",
+        "de": "mehr debug protokollierung",
+        "ru": "добавить больше рубок",
+        "pt": "adicionado mais registro de depuração",
+        "nl": "toegevoegd meer debug logging",
+        "fr": "plus de débogage",
+        "it": "aggiunto più debug logging",
+        "es": "añadido más registro de depuración",
+        "pl": "dodano więcej logowania debugowania",
+        "uk": "доданий більш дебатний каротаж",
+        "zh-cn": "添加更多调试日志"
+      },
       "0.4.2": {
         "en": "logging in case of no connection improoved",
         "de": "protokollierung, falls keine verbindung improoviert",
@@ -80,19 +93,6 @@
         "pl": "update eslint",
         "uk": "оновлення eslint",
         "zh-cn": "更新埃斯林特"
-      },
-      "0.1.4": {
-        "en": "add responsive tags for xs, s, l .... to json config",
-        "de": "kompatible tags für xs, s, l .... zu json config hinzufügen",
-        "ru": "добавить адаптивные теги для xs, s, l... к конфигурации json",
-        "pt": "adicionar tags responsivas para xs, s, l... para json config",
-        "nl": "responsieve tags voor xs, s, l .... toevoegen aan json config",
-        "fr": "ajouter des balises réactives pour xs, s, l .... à json config",
-        "it": "aggiungere tag reattivi per xs, s, l .... a json config",
-        "es": "añadir etiquetas de respuesta para xs, s, l .... a json config",
-        "pl": "dodaj odpowiednie znaczniki dla xs, s, l.... do json config",
-        "uk": "до json config",
-        "zh-cn": "在 json 配置中添加 xs, s, l... 的响应标记"
       }
     },
     "titleLang": {
