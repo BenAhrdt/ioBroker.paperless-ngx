@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "selezionare la casella di controllo per leggere i corrispondenti",
     "useToken": "Usa il token",
     "token": "gettone",
-    "tokeTooltip": "Seleziona per utilizzare il token invece Nome utente e password"
+    "tokeTooltip": "Seleziona per utilizzare il token invece Nome utente e password",
+    "timeout": "tempo scaduto",
+    "timeoutTooltip": "Inserisci il timeout per la connessione"
 }

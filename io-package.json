@@ -170,6 +170,7 @@
   "native": {
     "ipUrl": "",
     "port": 8000,
+    "timeout": 3000,
     "username": "",
     "password": "",
     "useToken": false,

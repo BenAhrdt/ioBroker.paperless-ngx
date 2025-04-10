@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "Aktivieren Sie die Checkbox zum Auslesen der Korrespondenten",
     "useToken": "Token verwenden",
     "token": "Token",
-    "tokeTooltip": "Anwählen, um Token anstatt Benutzername und Passwort zu verwenden"
+    "tokeTooltip": "Anwählen, um Token anstatt Benutzername und Passwort zu verwenden",
+    "timeout": "Time-out",
+    "timeoutTooltip": "Geben Sie die Zeitüberschreitung für die Verbindung ein"
 }

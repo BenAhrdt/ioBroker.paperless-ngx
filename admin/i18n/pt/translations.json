@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "marque a caixa de seleção para ler os correspondentes",
     "useToken": "Use token",
     "token": "token",
-    "tokeTooltip": "Selecione usar token em vez de nome de usuário e senha"
+    "tokeTooltip": "Selecione usar token em vez de nome de usuário e senha",
+    "timeout": "tempo esgotado",
+    "timeoutTooltip": "Insira o tempo limite para a conexão"
 }

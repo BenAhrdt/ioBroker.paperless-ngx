@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "选择复选框以读出通讯员",
     "useToken": "使用令牌",
     "token": "令牌",
-    "tokeTooltip": "选择要使用令牌代替用户名和密码"
+    "tokeTooltip": "选择要使用令牌代替用户名和密码",
+    "timeout": "暂停",
+    "timeoutTooltip": "输入连接的超时"
 }

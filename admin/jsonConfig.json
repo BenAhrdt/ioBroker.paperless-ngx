@@ -53,6 +53,19 @@
 					"lg": 1,
 					"xl": 1
 				},
+				"timeout":{
+					"type": "number",
+					"label": "timeout",
+					"tooltip": "timeoutTooltip",
+					"default": 3000,
+					"min": 3000,
+					"max": 20000,
+					"xs": 12,
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xl": 1
+				},
 				"_authenticationHeader": {
 					"newLine": true,
 					"type": "header",

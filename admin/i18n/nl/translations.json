@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "selecteer het selectievakje om de correspondenten uit te lezen",
     "useToken": "Gebruik token",
     "token": "boord",
-    "tokeTooltip": "Selecteer om token te gebruiken in plaats daarvan gebruikersnaam en wachtwoord"
+    "tokeTooltip": "Selecteer om token te gebruiken in plaats daarvan gebruikersnaam en wachtwoord",
+    "timeout": "time -out",
+    "timeoutTooltip": "Voer de time -out in voor de verbinding"
 }

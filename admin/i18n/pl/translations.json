@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "zaznacz pole wyboru, aby odczytać korespondentów",
     "useToken": "Użyj tokenu",
     "token": "znak",
-    "tokeTooltip": "Wybierz, aby użyć tokenu nazwy użytkownika i hasła"
+    "tokeTooltip": "Wybierz, aby użyć tokenu nazwy użytkownika i hasła",
+    "timeout": "Limit czasu",
+    "timeoutTooltip": "Wprowadź limit czasu na połączenie"
 }

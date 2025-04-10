@@ -34,5 +34,7 @@
 	"correspondentsLoglevelTooltip": "select checkbox for readout the conrrespondents",
 	"useToken": "use token",
 	"token": "token",
-	"tokeTooltip": "select to use token instead username and password"
+	"tokeTooltip": "select to use token instead username and password",
+	"timeout": "timeout",
+	"timeoutTooltip": "input the timeout for the connection"
 }

@@ -34,5 +34,7 @@
     "correspondentsLoglevelTooltip": "seleccione la casilla de verificación para leer los corresponsales",
     "useToken": "Usar token",
     "token": "simbólico",
-    "tokeTooltip": "Seleccione usar token en su lugar, nombre de usuario y contraseña"
+    "tokeTooltip": "Seleccione usar token en su lugar, nombre de usuario y contraseña",
+    "timeout": "se acabó el tiempo",
+    "timeoutTooltip": "Ingrese el tiempo de espera de la conexión"
 }
