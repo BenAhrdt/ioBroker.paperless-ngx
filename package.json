@@ -1,6 +1,6 @@
 {
   "name": "iobroker.paperless-ngx",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "paperless-ngx API zu get information of uploaded documents",
   "author": {
     "name": "BenAhrdt",

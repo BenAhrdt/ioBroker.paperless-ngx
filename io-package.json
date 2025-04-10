@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "news": {
+      "0.4.4": {
+        "en": "add timeout to config",
+        "de": "zeitout hinzufügen",
+        "ru": "добавить тайм-аут в конфигурацию",
+        "pt": "adicionar tempo limite para config",
+        "nl": "timeout toevoegen aan config",
+        "fr": "ajouter timeout à la configuration",
+        "it": "aggiungere timeout alla configurazione",
+        "es": "agregar tiempo a config",
+        "pl": "dodaj timeout do konfiguracji",
+        "uk": "add timeout to config",
+        "zh-cn": "添加超时到配置"
+      },
       "0.4.3": {
         "en": "added more debug logging",
         "de": "mehr debug protokollierung",
@@ -80,19 +93,6 @@
         "pl": "zastąpić zakazane znaki znakiem \"_\" i dodać timeout 3000ms do axios",
         "uk": "замінити заборонені chars з \"_\" і додати час 3000ms в axios",
         "zh-cn": "将禁用字符替换为“ _ ” , 并将超时3 000ms添加到轴中"
-      },
-      "0.2.0": {
-        "en": "update eslint",
-        "de": "update eslint",
-        "ru": "обновление eslint",
-        "pt": "atualização eslint",
-        "nl": "eslint bijwerken",
-        "fr": "mettre à jour eslint",
-        "it": "aggiornamento eslint",
-        "es": "update eslint",
-        "pl": "update eslint",
-        "uk": "оновлення eslint",
-        "zh-cn": "更新埃斯林特"
       }
     },
     "titleLang": {
