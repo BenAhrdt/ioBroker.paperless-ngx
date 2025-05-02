@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) update dependencie to node >= 20
+
 ### 0.4.4 (2025-04-10)
 * (BenAhrdt) add timeout to config
 
