@@ -29,6 +29,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 -->
 ### **WORK IN PROGRESS**
 * (BenAhrdt) update dependencie to node >= 20
+* (BenAhrdt) update testing to 24.x
 
 ### 0.4.4 (2025-04-10)
 * (BenAhrdt) add timeout to config
