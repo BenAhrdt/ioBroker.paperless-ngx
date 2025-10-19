@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.4.4",
+    "version": "0.5.0",
     "news": {
+      "0.5.0": {
+        "en": "update Authentication NPM\nupdate test to resolve conflicts\nupdate testing 5.1.1\nupdate dependencie core\nupdate dependencie to node >= 20\nupdate testing to 24.x",
+        "de": "update Authentication NPM\nupdate-test, um konflikte zu lösen\naktualisierungstest 5.1.1\naktualisierung abhängiger kern\nupdate abhängigencier to node >= 20\nupdate-tests auf 24.x",
+        "ru": "обновление Authentication NPM\nтест обновления для разрешения конфликтов\nтестирование обновлений 5.1.1\nобновление dependencie core\nобновление зависимых узлов >= 20\nтестирование обновлений до 24.x",
+        "pt": "atualizar a autenticação NPM\natualizar teste para resolver conflitos\nensaio de actualização 5.1.1\natualizar o núcleo dependente\natualização dependente para nó >= 20\natualização de testes para 24.x",
+        "nl": "authenticatie NPM bijwerken\nupdate test om conflicten op te lossen\nupdatetest 5.1.1\nupdate afhankelijke kern\nupdate afhankelijk van knooppunt 20\nupdate testen naar 24.x",
+        "fr": "mettre à jour Authentification NPM\nmettre à jour le test pour résoudre les conflits\nmise à jour des essais 5.1.1\nmise à jour du noyau de dependencie\nmettre à jour dependencie to node >= 20\nmettre à jour les tests à 24.x",
+        "it": "aggiornamento Autenticazione NPM\ntest di aggiornamento per risolvere i conflitti\naggiornamento test 5.1.1\naggiornamento indipendenza core\naggiornamento della dipendenza dal nodo 20\naggiornamento test a 24.x",
+        "es": "actualización de la autenticación NPM\nactualización de la prueba para resolver conflictos\npruebas de actualización 5.1.1\nactualización de los recursos básicos\nactualización dependecie de nodo √= 20\npruebas de actualización a 24.x",
+        "pl": "aktualizacja Uwierzytelnianie NPM\nuaktualnić test w celu rozwiązania konfliktów\naktualizacja badania 5.1.1\nupdate dependencie core\naktualizacja zależnego do węzła > = 20\naktualizacja testów do 24.x",
+        "uk": "оновлення аутентифікації NPM\nоновлення тесту для вирішення конфліктів\nтестування оновлення 5.1.1\nоновлення значення залежностей\nоновлення залежності до вершини >= 20 хв\nтестування оновлення до 24.x",
+        "zh-cn": "更新认证国家预防机制\n解决冲突的更新测试\n更新测试 5.1.1\n更新依赖核心\n更新依赖到节点qq 20 (简体中文)\n更新测试为 24.x"
+      },
       "0.4.4": {
         "en": "add timeout to config",
         "de": "zeitout hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "aktualizacja zależności administratora i kontrolera js-",
         "uk": "оновлення адмін і js-controller depencies",
         "zh-cn": "更新管理者和js控制器账户"
-      },
-      "0.2.1": {
-        "en": "replace forbidden chars with \"_\" and add timeout 3000ms to axios",
-        "de": "ersetzen verbotene wagen mit \"_\" und fügen sie timeout 3000ms zu axios",
-        "ru": "заменить запрещенные шары на \"_\" и добавить таймаут 3000ms к axios",
-        "pt": "substitua chars proibidos com \"_\" e adicione timeout 3000ms ao axios",
-        "nl": "vervang verboden tekens door \"_\" en voeg timeout 3000ms toe aan axios",
-        "fr": "remplacer les caractères interdits par \"_\" et ajouter 3000ms à l'axios",
-        "it": "sostituire i carboni vietati con \"_\" e aggiungere un timeout 3000m all'assios",
-        "es": "sustituir los charcos prohibidos por \"_\" y añadir tiempoout 3000m a axios",
-        "pl": "zastąpić zakazane znaki znakiem \"_\" i dodać timeout 3000ms do axios",
-        "uk": "замінити заборонені chars з \"_\" і додати час 3000ms в axios",
-        "zh-cn": "将禁用字符替换为“ _ ” , 并将超时3 000ms添加到轴中"
       }
     },
     "titleLang": {
