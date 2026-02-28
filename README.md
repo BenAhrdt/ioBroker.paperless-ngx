@@ -28,6 +28,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	### **WORK IN PROGRESS**
 -->
 ### 0.5.0 (2025-10-19)
+* (BenAhrdt) update dependencies
+
+### 0.5.0 (2025-10-19)
 * (BenAhrdt) update Authentication NPM
 * (BenAhrdt) update test to resolve conflicts
 * (BenAhrdt) update testing 5.1.1
