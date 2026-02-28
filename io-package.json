@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "news": {
+      "0.5.1": {
+        "en": "update dependencies",
+        "de": "aktualisierung der abhängigkeiten",
+        "ru": "обновление зависимостей",
+        "pt": "atualizar dependências",
+        "nl": "afhankelijkheden bijwerken",
+        "fr": "mettre à jour les dépendances",
+        "it": "aggiornamento dipendenze",
+        "es": "dependencias de actualización",
+        "pl": "aktualizacji zależności",
+        "uk": "оновлення залежності",
+        "zh-cn": "更新依赖关系"
+      },
       "0.5.0": {
         "en": "update Authentication NPM\nupdate test to resolve conflicts\nupdate testing 5.1.1\nupdate dependencie core\nupdate dependencie to node >= 20\nupdate testing to 24.x",
         "de": "update Authentication NPM\nupdate-test, um konflikte zu lösen\naktualisierungstest 5.1.1\naktualisierung abhängiger kern\nupdate abhängigencier to node >= 20\nupdate-tests auf 24.x",
@@ -80,19 +93,6 @@
         "pl": "Wdrożenie programu Token",
         "uk": "Реалізація токени",
         "zh-cn": "执行托肯"
-      },
-      "0.3.0": {
-        "en": "update admin and js-controller depencies",
-        "de": "admin- und js-controller-depencies aktualisieren",
-        "ru": "обновление admin и js-контроллеров",
-        "pt": "atualizar as competências admin e js-controller",
-        "nl": "update admin en js-controller capaciteiten",
-        "fr": "mettre à jour les dépences de l'administrateur et du contrôleur js",
-        "it": "aggiorna le depene di amministrazione e di controllo js",
-        "es": "actualización de los modos de administración y js-controller",
-        "pl": "aktualizacja zależności administratora i kontrolera js-",
-        "uk": "оновлення адмін і js-controller depencies",
-        "zh-cn": "更新管理者和js控制器账户"
       }
     },
     "titleLang": {

@@ -27,7 +27,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.5.1 (2026-02-28)
 * (BenAhrdt) update dependencies
 
 ### 0.5.0 (2025-10-19)
