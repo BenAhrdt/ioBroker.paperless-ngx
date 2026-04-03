@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "0.5.1",
+    "version": "1.0.0",
     "news": {
+      "1.0.0": {
+        "en": "change axios to fetch",
+        "de": "axios ändern",
+        "ru": "сменить аксиос на fetch",
+        "pt": "mudar o axios para obter",
+        "nl": "axios wijzigen om op te halen",
+        "fr": "changer axios pour récupérer",
+        "it": "cambiare assio a fetch",
+        "es": "cambiar axios para buscar",
+        "pl": "zmienić aksjos pobrać",
+        "uk": "змінити аксіос до fetch",
+        "zh-cn": "更改要获取的轴"
+      },
       "0.5.1": {
         "en": "update dependencies",
         "de": "aktualisierung der abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "Szukaj logiki i / lub improused",
         "uk": "Пошук логіки для і / або імпрововані",
         "zh-cn": "搜索逻辑 和 / 或未启动"
-      },
-      "0.4.0": {
-        "en": "Implement Token",
-        "de": "Implementieren Token",
-        "ru": "Скачать Token",
-        "pt": "Token de implementação",
-        "nl": "Token uitvoeren",
-        "fr": "Mettre en œuvre le jeton",
-        "it": "Attuazione Token",
-        "es": "Token de aplicación",
-        "pl": "Wdrożenie programu Token",
-        "uk": "Реалізація токени",
-        "zh-cn": "执行托肯"
       }
     },
     "titleLang": {
