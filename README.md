@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
 ### 1.0.0 (2026-04-03)
 * (BenAhrdt) change axios to fetch
 
