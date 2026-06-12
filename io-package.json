@@ -201,6 +201,8 @@
         "type": "boolean",
         "role": "button",
         "icon": "img/requestTrigger.png",
+        "read": true,
+        "write:": true,
         "default": false
       },
       "native": {}
@@ -230,6 +232,8 @@
         "type": "string",
         "role": "text",
         "icon": "img/query.png",
+        "read": true,
+        "write:": true,
         "default": ""
       },
       "native": {}
@@ -250,6 +254,8 @@
         "type": "string",
         "role": "text",
         "icon": "img/query.png",
+        "read": true,
+        "write:": true,
         "default": ""
       },
       "native": {}
@@ -262,6 +268,8 @@
         "type": "array",
         "role": "value",
         "icon": "img/query.png",
+        "read": true,
+        "write:": true,
         "default": []
       },
       "native": {}
@@ -274,6 +282,8 @@
         "type": "array",
         "role": "value",
         "icon": "img/query.png",
+        "read": true,
+        "write:": true,
         "default": []
       },
       "native": {}
@@ -286,6 +296,8 @@
         "type": "boolean",
         "role": "switch",
         "icon": "img/query.png",
+        "read": true,
+        "write:": true,
         "default": true
       },
       "native": {}
