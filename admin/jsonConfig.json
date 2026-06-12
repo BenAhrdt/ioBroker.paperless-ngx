@@ -1,94 +1,94 @@
 {
-	"i18n": true,
-	"type": "tabs",
-	"tabsStyle": {
-		"width": "calc(100% - 100px)"
-	},
-	"items":{
-        "mainTab":{
+    "i18n": true,
+    "type": "tabs",
+    "tabsStyle": {
+        "width": "calc(100% - 100px)"
+    },
+    "items": {
+        "mainTab": {
             "type": "panel",
             "label": "mainSettings",
-			"items": {
-				"_serversettingsHeader": {
-					"newLine": true,
-					"type": "header",
-					"text": "ServersettingsHeader",
-					"size": 3,
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"_serverinformation":{
-					"newLine":true,
-					"type": "staticText",
-					"label": "Serverinformation",
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12
-				},
-				"ipUrl":{
-					"newLine": true,
-					"type": "text",
-					"label": "ipUrl",
-					"tooltip": "ipUrlTooltip",
-					"default": "",
-					"xs": 12,
-					"sm": 4,
-					"md": 4,
-					"lg": 4,
-					"xl": 4
-				},
-				"port":{
-					"type": "number",
-					"label": "port",
-					"tooltip": "portTooltip",
-					"default": 8000,
-					"xs": 12,
-					"sm": 1,
-					"md": 1,
-					"lg": 1,
-					"xl": 1
-				},
-				"timeout":{
-					"type": "number",
-					"label": "timeout",
-					"tooltip": "timeoutTooltip",
-					"default": 3000,
-					"min": 3000,
-					"max": 20000,
-					"xs": 12,
-					"sm": 1,
-					"md": 1,
-					"lg": 1,
-					"xl": 1
-				},
-				"_authenticationHeader": {
-					"newLine": true,
-					"type": "header",
-					"text": "AuthenticationHeader",
-					"size": 3,
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"_authenticationInformation":{
-					"newLine":true,
-					"type": "staticText",
-					"label": "AuthenticationInformation",
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12
-				},
-				"useToken": {
-                    "newLine":true,
+            "items": {
+                "_serversettingsHeader": {
+                    "newLine": true,
+                    "type": "header",
+                    "text": "ServersettingsHeader",
+                    "size": 3,
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+                "_serverinformation": {
+                    "newLine": true,
+                    "type": "staticText",
+                    "label": "Serverinformation",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                },
+                "ipUrl": {
+                    "newLine": true,
+                    "type": "text",
+                    "label": "ipUrl",
+                    "tooltip": "ipUrlTooltip",
+                    "default": "",
+                    "xs": 12,
+                    "sm": 4,
+                    "md": 4,
+                    "lg": 4,
+                    "xl": 4
+                },
+                "port": {
+                    "type": "number",
+                    "label": "port",
+                    "tooltip": "portTooltip",
+                    "default": 8000,
+                    "xs": 12,
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xl": 1
+                },
+                "timeout": {
+                    "type": "number",
+                    "label": "timeout",
+                    "tooltip": "timeoutTooltip",
+                    "default": 3000,
+                    "min": 3000,
+                    "max": 20000,
+                    "xs": 12,
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xl": 1
+                },
+                "_authenticationHeader": {
+                    "newLine": true,
+                    "type": "header",
+                    "text": "AuthenticationHeader",
+                    "size": 3,
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+                "_authenticationInformation": {
+                    "newLine": true,
+                    "type": "staticText",
+                    "label": "AuthenticationInformation",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                },
+                "useToken": {
+                    "newLine": true,
                     "type": "checkbox",
                     "label": "useToken",
                     "default": false,
@@ -98,168 +98,167 @@
                     "lg": 1,
                     "xl": 1
                 },
-				"username":{
-					"type": "text",
-					"label": "username",
-					"tooltip": "usernameTooltip",
-					"default": "",
-					"hidden":"data.useToken === true",
-					"xs": 12,
-					"sm": 4,
-					"md": 4,
-					"lg": 4,
-					"xl": 4
-				},
-				"password":{
-					"type": "password",
-					"label": "password",
-					"tooltip": "passwordTooltip",
-					"default": "",
-					"hidden":"data.useToken === true",
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"token":{
-					"type": "password",
-					"label": "token",
-					"tooltip": "tokenTooltip",
-					"default": "",
-					"hidden":"data.useToken === false",
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				}
-			}
-		},
-		"dataTab":{
+                "username": {
+                    "type": "text",
+                    "label": "username",
+                    "tooltip": "usernameTooltip",
+                    "default": "",
+                    "hidden": "data.useToken === true",
+                    "xs": 12,
+                    "sm": 4,
+                    "md": 4,
+                    "lg": 4,
+                    "xl": 4
+                },
+                "password": {
+                    "type": "password",
+                    "label": "password",
+                    "tooltip": "passwordTooltip",
+                    "default": "",
+                    "hidden": "data.useToken === true",
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+                "token": {
+                    "type": "password",
+                    "label": "token",
+                    "default": "",
+                    "hidden": "data.useToken === false",
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                }
+            }
+        },
+        "dataTab": {
             "type": "panel",
             "label": "dataSettings",
-			"items": {
-				"_datasettingsHeader": {
-					"newLine": true,
-					"type": "header",
-					"text": "DatasettingsHeader",
-					"size": 3,
-					"xs": 12,
-					"sm": 3,
-					"md": 3,
-					"lg": 3,
-					"xl": 3
-				},
-				"_datainformation":{
-					"newLine":true,
-					"type": "staticText",
-					"label": "Datainformation",
-					"xs": 12,
-					"sm": 12,
-					"md": 12,
-					"lg": 12,
-					"xl": 12
-				},
-				"refreshCycle": {
+            "items": {
+                "_datasettingsHeader": {
+                    "newLine": true,
+                    "type": "header",
+                    "text": "DatasettingsHeader",
+                    "size": 3,
+                    "xs": 12,
+                    "sm": 3,
+                    "md": 3,
+                    "lg": 3,
+                    "xl": 3
+                },
+                "_datainformation": {
+                    "newLine": true,
+                    "type": "staticText",
+                    "label": "Datainformation",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12
+                },
+                "refreshCycle": {
                     "newLine": true,
                     "type": "cron",
                     "complex": true,
                     "label": "refreshCycle",
                     "tooltip": "refreshCycleTooltip",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2,
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2,
                     "default": "*/15 * * * *"
-				},
-				"tagsLoglevel":{
-					"newLine": true,
-					"type": "select",
-					"label": "tagsLoglevel",
-					"tooltip": "tagsLoglevelTooltip",
-					"options": [
-						{"label":"without","value":0},
-						{"label":"Basic","value":1},
-						{"label":"Detailed","value":2}
-					],
-					"default": "Detailed",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
-				},
-				"documentsLoglevel":{
-					"newLine": true,
-					"type": "select",
-					"label": "documentsLoglevel",
-					"tooltip": "documentsLoglevelTooltip",
-					"options": [
-						{"label":"without","value":0},
-						{"label":"Basic","value":1},
-						{"label":"Detailed","value":2}
-					],
-					"default": "without",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
-				},
-				"documentTypesLoglevel":{
-					"newLine": true,
-					"type": "select",
-					"label": "documentTypesLoglevel",
-					"tooltip": "documentTypesLoglevelTooltip",
-					"options": [
-						{"label":"without","value":0},
-						{"label":"Basic","value":1},
-						{"label":"Detailed","value":2}
-					],
-					"default": "without",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
-				},
-				"usersLoglevel":{
-					"newLine": true,
-					"type": "select",
-					"label": "usersLoglevel",
-					"tooltip": "usersLoglevelTooltip",
-					"options": [
-						{"label":"without","value":0},
-						{"label":"Basic","value":1},
-						{"label":"Detailed","value":2}
-					],
-					"default": "Basic",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
-				},
-				"correspondentsLoglevel":{
-					"newLine": true,
-					"type": "select",
-					"label": "correspondentsLoglevel",
-					"tooltip": "correspondentsLoglevelTooltip",
-					"options": [
-						{"label":"without","value":0},
-						{"label":"Basic","value":1},
-						{"label":"Detailed","value":2}
-					],
-					"default": "Basic",
-					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
-				}
-			}
-		}
-	}
+                },
+                "tagsLoglevel": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "tagsLoglevel",
+                    "tooltip": "tagsLoglevelTooltip",
+                    "options": [
+                        { "label": "without", "value": 0 },
+                        { "label": "Basic", "value": 1 },
+                        { "label": "Detailed", "value": 2 }
+                    ],
+                    "default": "Detailed",
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                },
+                "documentsLoglevel": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "documentsLoglevel",
+                    "tooltip": "documentsLoglevelTooltip",
+                    "options": [
+                        { "label": "without", "value": 0 },
+                        { "label": "Basic", "value": 1 },
+                        { "label": "Detailed", "value": 2 }
+                    ],
+                    "default": "without",
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                },
+                "documentTypesLoglevel": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "documentTypesLoglevel",
+                    "tooltip": "documentTypesLoglevelTooltip",
+                    "options": [
+                        { "label": "without", "value": 0 },
+                        { "label": "Basic", "value": 1 },
+                        { "label": "Detailed", "value": 2 }
+                    ],
+                    "default": "without",
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                },
+                "usersLoglevel": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "usersLoglevel",
+                    "tooltip": "usersLoglevelTooltip",
+                    "options": [
+                        { "label": "without", "value": 0 },
+                        { "label": "Basic", "value": 1 },
+                        { "label": "Detailed", "value": 2 }
+                    ],
+                    "default": "Basic",
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                },
+                "correspondentsLoglevel": {
+                    "newLine": true,
+                    "type": "select",
+                    "label": "correspondentsLoglevel",
+                    "tooltip": "correspondentsLoglevelTooltip",
+                    "options": [
+                        { "label": "without", "value": 0 },
+                        { "label": "Basic", "value": 1 },
+                        { "label": "Detailed", "value": 2 }
+                    ],
+                    "default": "Basic",
+                    "xs": 12,
+                    "sm": 2,
+                    "md": 2,
+                    "lg": 2,
+                    "xl": 2
+                }
+            }
+        }
+    }
 }

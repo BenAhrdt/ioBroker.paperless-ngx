@@ -201,7 +201,7 @@
         "type": "boolean",
         "role": "button",
         "icon": "img/requestTrigger.png",
-        "read": true,
+        "read": false,
         "write": true,
         "default": false
       },
@@ -266,7 +266,7 @@
       "common": {
         "name": "query of document search",
         "type": "array",
-        "role": "value",
+        "role": "state",
         "icon": "img/query.png",
         "read": true,
         "write": true,
@@ -280,7 +280,7 @@
       "common": {
         "name": "query of document search (blocked tags)",
         "type": "array",
-        "role": "value",
+        "role": "state",
         "icon": "img/query.png",
         "read": true,
         "write": true,
