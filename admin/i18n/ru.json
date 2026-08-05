@@ -1,5 +1,7 @@
 {
     "All": "Все",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Настройки аутентификации",
     "AuthenticationInformation": "Установите аутентификацию для вашего сервера (при необходимости)",
     "Basic": "Базовый",
@@ -23,6 +25,8 @@
     "passwordTooltip": "введите свой пароль",
     "port": "порт",
     "portTooltip": "введите порт для подключения",
+    "protocol": "Протокол",
+    "protocolTooltip": "выберите HTTP или HTTPS для подключения",
     "refreshCycle": "цикл обновления",
     "refreshCycleTooltip": "введите желаемый cronJob, который считывает данные из вашего экземпляра",
     "tagsLoglevel": "теги",

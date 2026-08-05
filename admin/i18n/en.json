@@ -1,5 +1,7 @@
 {
     "All": "All",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Authenticationsettings",
     "AuthenticationInformation": "Set the authentication for your server (if needed)",
     "Basic": "Basic",
@@ -23,6 +25,8 @@
     "passwordTooltip": "input you password",
     "port": "port",
     "portTooltip": "input the port for the connection",
+    "protocol": "protocol",
+    "protocolTooltip": "select HTTP or HTTPS for the connection",
     "refreshCycle": "refresh cycle",
     "refreshCycleTooltip": "enter the desired cronJob, wich reads out the data from your instance",
     "tagsLoglevel": "tags",

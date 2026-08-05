@@ -29,6 +29,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 -->
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires node.js >= 22 now
+- (BenAhrdt) Add HTTPS and reverse proxy URL support while keeping existing HTTP configurations compatible
 
 ### 1.0.0 (2026-04-03)
 * (BenAhrdt) change axios to fetch

@@ -1,5 +1,7 @@
 {
     "All": "全部",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "身份验证设置",
     "AuthenticationInformation": "设置服务器的身份验证（如果需要）",
     "Basic": "基本的",
@@ -23,6 +25,8 @@
     "passwordTooltip": "输入您的密码",
     "port": "港口",
     "portTooltip": "输入连接的端口",
+    "protocol": "协议",
+    "protocolTooltip": "选择 HTTP 或 HTTPS 连接",
     "refreshCycle": "刷新周期",
     "refreshCycleTooltip": "输入所需的 cronJob，它会从您的实例中读取数据",
     "tagsLoglevel": "标签",

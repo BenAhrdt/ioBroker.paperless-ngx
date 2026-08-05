@@ -1,5 +1,7 @@
 {
     "All": "Alles",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Authentifizierungseinstellungen",
     "AuthenticationInformation": "Legen Sie die Authentifizierung für Ihren Server fest (falls erforderlich)",
     "Basic": "Basisparameter",
@@ -23,6 +25,8 @@
     "passwordTooltip": "Geben Sie Ihr Passwort ein",
     "port": "Port",
     "portTooltip": "Geben Sie den Port für die Verbindung ein",
+    "protocol": "Protokoll",
+    "protocolTooltip": "Wählen Sie HTTP oder HTTPS für die Verbindung aus",
     "refreshCycle": "Aktualisierungszyklus",
     "refreshCycleTooltip": "Geben Sie den gewünschten CronJob ein, der die Daten aus Ihrer Instanz ausliest",
     "tagsLoglevel": "Tags",

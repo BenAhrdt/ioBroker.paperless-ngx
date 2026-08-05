@@ -1,5 +1,7 @@
 {
     "All": "Alle",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Authenticatie-instellingen",
     "AuthenticationInformation": "Stel de authenticatie voor uw server in (indien nodig)",
     "Basic": "Basis",
@@ -23,6 +25,8 @@
     "passwordTooltip": "voer uw wachtwoord in",
     "port": "haven",
     "portTooltip": "voer de poort voor de verbinding in",
+    "protocol": "Protocol",
+    "protocolTooltip": "selecteer HTTP of HTTPS voor de verbinding",
     "refreshCycle": "vernieuwingscyclus",
     "refreshCycleTooltip": "voer de gewenste cronJob in, die de gegevens van uw instance uitleest",
     "tagsLoglevel": "labels",

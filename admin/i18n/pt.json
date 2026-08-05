@@ -1,5 +1,7 @@
 {
     "All": "Todos",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Configurações de autenticação",
     "AuthenticationInformation": "Defina a autenticação do seu servidor (se necessário)",
     "Basic": "Básico",
@@ -23,6 +25,8 @@
     "passwordTooltip": "insira sua senha",
     "port": "porta",
     "portTooltip": "insira a porta para a conexão",
+    "protocol": "Protocolo",
+    "protocolTooltip": "selecione HTTP ou HTTPS para a conexão",
     "refreshCycle": "ciclo de atualização",
     "refreshCycleTooltip": "insira o cronJob desejado, que lê os dados da sua instância",
     "tagsLoglevel": "etiquetas",

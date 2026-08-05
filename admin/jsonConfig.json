@@ -30,8 +30,23 @@
                     "lg": 12,
                     "xl": 12
                 },
-                "ipUrl": {
+                "protocol": {
                     "newLine": true,
+                    "type": "select",
+                    "label": "protocol",
+                    "tooltip": "protocolTooltip",
+                    "options": [
+                        { "label": "HTTP", "value": "http" },
+                        { "label": "HTTPS", "value": "https" }
+                    ],
+                    "default": "http",
+                    "xs": 12,
+                    "sm": 1,
+                    "md": 1,
+                    "lg": 1,
+                    "xl": 1
+                },
+                "ipUrl": {
                     "type": "text",
                     "label": "ipUrl",
                     "tooltip": "ipUrlTooltip",

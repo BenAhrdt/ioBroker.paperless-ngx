@@ -1,5 +1,7 @@
 {
     "All": "Tous",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Paramètres d'authentification",
     "AuthenticationInformation": "Définissez l'authentification pour votre serveur (si nécessaire)",
     "Basic": "Basique",
@@ -23,6 +25,8 @@
     "passwordTooltip": "saisissez votre mot de passe",
     "port": "port",
     "portTooltip": "saisir le port pour la connexion",
+    "protocol": "Protocole",
+    "protocolTooltip": "sélectionner HTTP ou HTTPS pour la connexion",
     "refreshCycle": "cycle de rafraîchissement",
     "refreshCycleTooltip": "entrez le cronJob souhaité, qui lit les données de votre instance",
     "tagsLoglevel": "balises",

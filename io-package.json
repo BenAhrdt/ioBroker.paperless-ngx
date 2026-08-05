@@ -52,7 +52,7 @@
         "it": "aggiungere timeout alla configurazione",
         "es": "agregar tiempo a config",
         "pl": "dodaj timeout do konfiguracji",
-        "uk": "add timeout to config",
+        "uk": "додати тайм-аут до конфігурації",
         "zh-cn": "添加超时到配置"
       },
       "0.4.3": {
@@ -169,6 +169,7 @@
   ],
   "native": {
     "ipUrl": "",
+    "protocol": "http",
     "port": 8000,
     "timeout": 3000,
     "username": "",

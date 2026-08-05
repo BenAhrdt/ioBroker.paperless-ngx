@@ -1,5 +1,7 @@
 {
     "All": "Wszystko",
+    "HTTP": "HTTP",
+    "HTTPS": "HTTPS",
     "AuthenticationHeader": "Ustawienia uwierzytelniania",
     "AuthenticationInformation": "Ustaw uwierzytelnianie dla swojego serwera (jeśli to konieczne)",
     "Basic": "Podstawowy",
@@ -23,6 +25,8 @@
     "passwordTooltip": "wprowadź hasło",
     "port": "port",
     "portTooltip": "wprowadź port połączenia",
+    "protocol": "Protokół",
+    "protocolTooltip": "wybierz HTTP lub HTTPS dla połączenia",
     "refreshCycle": "cykl odświeżania",
     "refreshCycleTooltip": "wprowadź żądany cronJob, który odczyta dane z Twojej instancji",
     "tagsLoglevel": "tagi",
