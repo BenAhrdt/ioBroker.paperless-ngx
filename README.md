@@ -27,6 +27,9 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (BenAhrdt) Prevent adapter startup failure when no Paperless server is configured
+
 ### 1.0.1 (2026-08-05)
 - (copilot) Adapter requires node.js >= 22 now
 - (BenAhrdt) Add HTTPS and reverse proxy URL support while keeping existing HTTP configurations compatible
