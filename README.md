@@ -27,7 +27,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.2 (2026-08-05)
 - (BenAhrdt) Prevent adapter startup failure when no Paperless server is configured
 
 ### 1.0.1 (2026-08-05)
@@ -47,9 +47,6 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 * (BenAhrdt) update dependencie core
 * (BenAhrdt) update dependencie to node >= 20
 * (BenAhrdt) update testing to 24.x
-
-### 0.4.4 (2025-04-10)
-* (BenAhrdt) add timeout to config
 
 [Older changelogs can be found there](CHANGELOG_OLD.md)
 

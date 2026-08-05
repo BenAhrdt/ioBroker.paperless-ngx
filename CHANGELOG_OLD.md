@@ -1,4 +1,7 @@
 # Older changes
+## 0.4.4 (2025-04-10)
+* (BenAhrdt) add timeout to config
+
 ## 0.4.3 (2025-04-10)
 * (BenAhrdt) added more debug logging
 

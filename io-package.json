@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "news": {
+      "1.0.2": {
+        "en": "Prevent adapter startup failure when no Paperless server is configured",
+        "de": "Verhindern von Startfehlern des Adapters, wenn kein Paperless-Server konfiguriert ist",
+        "ru": "Предотвратите сбой при запуске адаптера, если сервер Paperless не настроен.",
+        "pt": "Evitar falha na inicialização do adaptador quando nenhum servidor Paperless estiver configurado.",
+        "nl": "Voorkom dat de adapter opstart wanneer er geen Paperless-server is geconfigureerd.",
+        "fr": "Empêcher l'échec du démarrage de l'adaptateur lorsqu'aucun serveur Paperless n'est configuré",
+        "it": "Prevenire errori di avvio dell'adattatore quando non è configurato alcun server Paperless.",
+        "es": "Evitar fallos de inicio del adaptador cuando no hay ningún servidor Paperless configurado.",
+        "pl": "Zapobiegaj awariom podczas uruchamiania adaptera, gdy nie skonfigurowano serwera Paperless",
+        "uk": "Запобігання збою запуску адаптера, коли не налаштовано сервер Paperless",
+        "zh-cn": "防止在未配置无纸化服务器时适配器启动失败"
+      },
       "1.0.1": {
         "en": "Adapter requires node.js >= 22 now\nAdd HTTPS and reverse proxy URL support while keeping existing HTTP configurations compatible",
         "de": "Der Adapter benötigt jetzt Node.js >= 22.\nFügen Sie Unterstützung für HTTPS- und Reverse-Proxy-URLs hinzu und behalten Sie gleichzeitig die Kompatibilität mit bestehenden HTTP-Konfigurationen bei.",
@@ -80,19 +93,6 @@
         "pl": "dodano więcej logowania debugowania",
         "uk": "доданий більш дебатний каротаж",
         "zh-cn": "添加更多调试日志"
-      },
-      "0.4.2": {
-        "en": "logging in case of no connection improoved",
-        "de": "protokollierung, falls keine verbindung improoviert",
-        "ru": "лесозаготовки в случае отсутствия подсоединения",
-        "pt": "registro no caso de nenhuma conexão improoved",
-        "nl": "loggen in geval van geen verbinding geïmproviseerd",
-        "fr": "l'enregistrement en cas d'absence de connexion",
-        "it": "logging in caso di assenza di connessione",
-        "es": "registro en caso de no conexión improvisada",
-        "pl": "logowanie w przypadku braku połączenia improused",
-        "uk": "в разі відсутності з'єднання",
-        "zh-cn": "无法连接时进行记录"
       }
     },
     "titleLang": {
