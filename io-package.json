@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "news": {
+      "1.0.1": {
+        "en": "Adapter requires node.js >= 22 now\nAdd HTTPS and reverse proxy URL support while keeping existing HTTP configurations compatible",
+        "de": "Der Adapter benötigt jetzt Node.js >= 22.\nFügen Sie Unterstützung für HTTPS- und Reverse-Proxy-URLs hinzu und behalten Sie gleichzeitig die Kompatibilität mit bestehenden HTTP-Konfigurationen bei.",
+        "ru": "Для работы адаптера требуется Node.js версии >= 22.\nДобавлена поддержка URL-адресов HTTPS и обратного прокси, при этом сохраняется совместимость с существующими конфигурациями HTTP.",
+        "pt": "O adaptador agora requer Node.js >= 22.\nAdicionar suporte a URLs HTTPS e proxy reverso, mantendo a compatibilidade com as configurações HTTP existentes.",
+        "nl": "De adapter vereist nu Node.js versie 22 of hoger.\nVoeg ondersteuning voor HTTPS en reverse proxy-URL's toe, terwijl de bestaande HTTP-configuraties compatibel blijven.",
+        "fr": "L'adaptateur nécessite désormais Node.js >= 22.\nAjout de la prise en charge HTTPS et des URL de proxy inverse tout en maintenant la compatibilité des configurations HTTP existantes",
+        "it": "L'adattatore ora richiede Node.js >= 22\nAggiungi il supporto per HTTPS e URL proxy inverso mantenendo la compatibilità con le configurazioni HTTP esistenti.",
+        "es": "El adaptador ahora requiere node.js >= 22.\nAgregar compatibilidad con HTTPS y URL de proxy inverso manteniendo la compatibilidad con las configuraciones HTTP existentes.",
+        "pl": "Adapter wymaga teraz node.js >= 22\nDodaj obsługę protokołu HTTPS i odwrotnego serwera proxy, zachowując jednocześnie zgodność istniejących konfiguracji HTTP",
+        "uk": "Адаптер тепер вимагає node.js >= 22\nДодайте підтримку HTTPS та URL зворотного проксі-сервера, зберігаючи сумісність з існуючими конфігураціями HTTP",
+        "zh-cn": "适配器现在需要 node.js 版本 >= 22。\n添加 HTTPS 和反向代理 URL 支持，同时保持现有 HTTP 配置的兼容性"
+      },
       "1.0.0": {
         "en": "change axios to fetch",
         "de": "axios ändern",
@@ -80,19 +93,6 @@
         "pl": "logowanie w przypadku braku połączenia improused",
         "uk": "в разі відсутності з'єднання",
         "zh-cn": "无法连接时进行记录"
-      },
-      "0.4.1": {
-        "en": "Search logic for and / or improoved",
-        "de": "Suchlogik für und / oder improoviert",
-        "ru": "Логика поиска и/или импровизация",
-        "pt": "Procurar lógica para e / ou improoved",
-        "nl": "Zoeklogica voor en / of geïmproviseerd",
-        "fr": "Logique de recherche et / ou improoved",
-        "it": "Ricerca logica per e/o improbabile",
-        "es": "Buscar lógica para / o improvisado",
-        "pl": "Szukaj logiki i / lub improused",
-        "uk": "Пошук логіки для і / або імпрововані",
-        "zh-cn": "搜索逻辑 和 / 或未启动"
       }
     },
     "titleLang": {
