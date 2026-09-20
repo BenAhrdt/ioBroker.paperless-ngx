@@ -144,7 +144,17 @@
       {
         "admin": ">=7.7.22"
       }
-    ]
+    ],
+    "messagebox": true,
+    "adminTab": {
+      "name": {
+        "en": "Paperless",
+        "de": "Paperless"
+      },
+      "singleton": true,
+      "order": 35,
+      "supportsLoadingMessage": true
+    }
   },
   "encryptedNative": [
     "password",

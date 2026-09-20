@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#14532d" />
+        <title>Paperless</title>
+        <link rel="stylesheet" href="tab.css" />
+        <script src="../../lib/js/socket.io.js"></script>
+        <script defer src="tab.js"></script>
+    </head>
+    <body>
+        <div class="app-shell">
+            <header class="topbar">
+                <a class="brand" href="#home" aria-label="Paperless Startseite">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 32 32"><path d="M24.8 4.5C17 5 8.7 7.7 6 14.2c-1.5 3.6-.1 7.8 3.4 9.4 4.8 2.2 9.1-1 11.1-5.4 1.6-3.5 2.5-8.5 4.3-13.7Z"/><path d="M6.8 27.2c3.4-5.3 7.7-8.8 13-11.8"/></svg>
+                    </span>
+                    <span>Paperless<span class="brand-light">-ngx</span></span>
+                </a>
+                <form id="top-search-form" class="top-search" role="search">
+                    <span class="search-symbol" aria-hidden="true">⌕</span>
+                    <input id="top-search" type="search" placeholder="Suchen" autocomplete="off" />
+                    <kbd>Enter</kbd>
+                </form>
+                <div class="top-actions">
+                    <label class="instance-picker" title="Adapterinstanz auswählen">
+                        <span class="visually-hidden">Instanz</span>
+                        <select id="instance-select" aria-label="Adapterinstanz auswählen"></select>
+                    </label>
+                    <span id="connection-pill" class="connection-pill" data-connected="false">
+                        <span class="connection-dot"></span><span id="connection-text">Verbinde…</span>
+                    </span>
+                    <a id="paperless-link" class="paperless-link" href="#" target="_blank" rel="noopener noreferrer" hidden>
+                        Paperless öffnen <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </header>
+
+            <div class="workspace">
+                <aside class="sidebar" aria-label="Paperless Navigation">
+                    <nav class="main-nav">
+                        <button class="nav-item active" data-view="home" type="button"><span class="nav-icon">⌂</span>Startseite</button>
+                        <button class="nav-item" data-view="documents" type="button"><span class="nav-icon">▤</span>Dokumente</button>
+                        <div class="nav-section">VERWALTUNG</div>
+                        <button class="nav-item" data-view="tags" type="button"><span class="nav-icon">◇</span>Tags <span id="nav-tags-count" class="nav-count"></span></button>
+                        <button class="nav-item" data-view="correspondents" type="button"><span class="nav-icon">♙</span>Korrespondenten</button>
+                        <button class="nav-item" data-view="document-types" type="button"><span class="nav-icon">#</span>Dokumenttypen</button>
+                        <button class="nav-item" data-view="users" type="button"><span class="nav-icon">♧</span>Benutzer</button>
+                    </nav>
+                    <div class="sidebar-bottom">
+                        <div class="sidebar-label">ADAPTER</div>
+                        <button id="refresh-button" class="side-action" type="button"><span class="nav-icon">⟳</span>Daten aktualisieren</button>
+                        <div class="sidebar-status"><span class="status-label">Status</span><span id="current-step">–</span></div>
+                        <div class="sidebar-foot">Paperless-ngx · ioBroker</div>
+                    </div>
+                </aside>
+
+                <main class="main-content">
+                    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+                    <section id="page-content" aria-live="polite">
+                        <div class="loading-state"><span class="spinner"></span><span>Paperless wird geladen…</span></div>
+                    </section>
+                    <footer class="page-footer">
+                        <span>Paperless-ngx</span><span class="footer-dot">·</span><span>ioBroker Adapter</span>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

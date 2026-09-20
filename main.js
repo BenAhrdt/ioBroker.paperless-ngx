@@ -23,8 +23,8 @@ class PaperlessNgx extends utils.Adapter {
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
+        this.on('message', this.onMessage.bind(this));
         // this.on("objectChange", this.onObjectChange.bind(this));
-        // this.on("message", this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
 
         this.cronJobs = {};
@@ -41,28 +41,37 @@ class PaperlessNgx extends utils.Adapter {
      */
     async onReady() {
         this.paperlessCommunication = new paperlesscommunicationClass(this);
-        if (await this.paperlessCommunication.checkConnection()) {
-            // Subscribe internal writefunctions
-            this.subscribeStatesAsync('search.*.query*');
-            this.subscribeStatesAsync('control.requestTrigger');
 
-            // Reset the connection indicator during startup
-            this.setState('info.connection', true, true);
+        // Keep command states subscribed even while Paperless is offline so
+        // requests can be acknowledged and report a useful connection error.
+        await this.subscribeStatesAsync('search.*.query*');
+        await this.subscribeStatesAsync('control.requestTrigger');
+        await this.setStateAsync('info.connection', false, true);
+
+        if (await this.paperlessCommunication.checkConnection()) {
+            await this.setStateAsync('info.connection', true, true);
 
             await this.paperlessCommunication.readActualData();
             await this.setIdle();
-
-            this.cronJobs[this.cronJobIds.refreshCycle] = schedule.scheduleJob(
-                this.config.refreshCycle,
-                this.readActualDataCyclic.bind(this),
-            );
         } else {
             this.log.error('No active connection to paperless API');
+            await this.setIdle();
         }
+
+        // Keep retrying on the configured cycle when Paperless was offline
+        // during startup. The cycle checks the connection before reading.
+        this.cronJobs[this.cronJobIds.refreshCycle] = schedule.scheduleJob(
+            this.config.refreshCycle,
+            this.readActualDataCyclic.bind(this),
+        );
     }
 
     async readActualDataCyclic() {
-        await this.paperlessCommunication?.readActualData();
+        const connected = await this.paperlessCommunication?.checkConnection();
+        await this.setStateAsync('info.connection', connected === true, true);
+        if (connected) {
+            await this.paperlessCommunication?.readActualData();
+        }
         await this.setIdle();
     }
 
@@ -118,85 +127,157 @@ class PaperlessNgx extends utils.Adapter {
      * @param state state (val & ack) of the changed state-id
      */
     async onStateChange(id, state) {
-        if (state) {
-            // The state was changed
-            // this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
-            // just handle statechanges without ack
-            if (!state.ack) {
-                // Request the actual Data
-                if (id.indexOf('control.requestTrigger') !== -1) {
+        if (!state || state.ack) {
+            return;
+        }
+
+        try {
+            if (id.endsWith('control.requestTrigger')) {
+                const connected = await this.paperlessCommunication?.checkConnection();
+                await this.setStateAsync('info.connection', connected === true, true);
+                if (connected) {
                     await this.paperlessCommunication?.readActualData();
-                    this.setState(id, false, true);
-                    await this.setState(this.currentStep, 'idle', true);
-                } else {
-                    // send search query
-                    // Query for global search
-                    if (id.indexOf('global') !== -1) {
-                        await this.paperlessCommunication?.sendGlobalSearchQuery(state.val);
-                        await this.setIdle();
-                    } else if (id.indexOf('documents') !== -1) {
-                        // Query for documents search
-                        if (id.endsWith('query')) {
-                            const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
-                            const blockedTags = await this.getStateAsync(
-                                `${this.namespace}.search.documents.queryBlockedTags`,
-                            );
-                            const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
-                            await this.paperlessCommunication?.sendDocumentsSearchQuery(
-                                state.val,
-                                tags?.val,
-                                blockedTags?.val,
-                                allTags?.val,
-                            );
-                            await this.setIdle();
-                        }
-                        if (id.endsWith('queryTags')) {
-                            const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
-                            const blockedTags = await this.getStateAsync(
-                                `${this.namespace}.search.documents.queryBlockedTags`,
-                            );
-                            const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
-                            await this.paperlessCommunication?.sendDocumentsSearchQuery(
-                                query?.val,
-                                state.val,
-                                blockedTags?.val,
-                                allTags?.val,
-                            );
-                            await this.setIdle();
-                        }
-                        if (id.endsWith('queryBlockedTags')) {
-                            const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
-                            const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
-                            const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
-                            await this.paperlessCommunication?.sendDocumentsSearchQuery(
-                                query?.val,
-                                tags?.val,
-                                state.val,
-                                allTags?.val,
-                            );
-                            await this.setIdle();
-                        }
-                        if (id.endsWith('queryAllTags')) {
-                            const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
-                            const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
-                            const blockedTags = await this.getStateAsync(
-                                `${this.namespace}.search.documents.queryBlockedTags`,
-                            );
-                            await this.paperlessCommunication?.sendDocumentsSearchQuery(
-                                query?.val,
-                                tags?.val,
-                                blockedTags?.val,
-                                state.val,
-                            );
-                            await this.setIdle();
-                        }
-                    }
-                    await this.setState(id, state.val, true);
                 }
+                await this.setState(id, false, true);
+                await this.setIdle();
+                return;
             }
-        } else {
-            // The state was deleted
-            // this.log.info(`state ${id} deleted`);
+
+            if (id.includes('search.global.query')) {
+                await this.paperlessCommunication?.sendGlobalSearchQuery(state.val);
+                await this.setIdle();
+                await this.setState(id, state.val, true);
+                return;
+            }
+
+            if (!id.includes('search.documents.')) {
+                return;
+            }
+
+            const query = await this.getStateAsync(`${this.namespace}.search.documents.query`);
+            const tags = await this.getStateAsync(`${this.namespace}.search.documents.queryTags`);
+            const blockedTags = await this.getStateAsync(`${this.namespace}.search.documents.queryBlockedTags`);
+            const allTags = await this.getStateAsync(`${this.namespace}.search.documents.queryAllTags`);
+            await this.paperlessCommunication?.sendDocumentsSearchQuery(
+                id.endsWith('.query') ? state.val : query?.val,
+                id.endsWith('.queryTags') ? state.val : tags?.val,
+                id.endsWith('.queryBlockedTags') ? state.val : blockedTags?.val,
+                id.endsWith('.queryAllTags') ? state.val : allTags?.val,
+            );
+            await this.setIdle();
+            await this.setState(id, state.val, true);
+        } catch (error) {
+            this.log.error(`Error handling state ${id}: ${error}`);
+            try {
+                await this.setState(id, state.val, true);
+            } catch (ackError) {
+                this.log.error(`Could not acknowledge state ${id}: ${ackError}`);
+            }
+            await this.setIdle();
+        }
+    }
+
+    async onMessage(obj) {
+        if (!obj || !obj.callback) {
+            return;
+        }
+
+        try {
+            if (obj.command === 'dashboardInfo') {
+                const connection = await this.getStateAsync('info.connection');
+                const currentStep = await this.getStateAsync(this.currentStep);
+                this.sendTo(
+                    obj.from,
+                    obj.command,
+                    {
+                        ok: true,
+                        baseUrl: this.paperlessCommunication?.address || '',
+                        connection: connection?.val === true,
+                        currentStep: currentStep?.val || 'idle',
+                    },
+                    obj.callback,
+                );
+                return;
+            }
+
+            if (obj.command === 'dashboardGlobalSearch') {
+                const query = typeof obj.message?.query === 'string' ? obj.message.query : '';
+                if (!query.trim()) {
+                    this.sendTo(
+                        obj.from,
+                        obj.command,
+                        { ok: false, error: 'Bitte gib einen Suchbegriff ein.' },
+                        obj.callback,
+                    );
+                    return;
+                }
+                await this.setStateAsync('search.global.query', query, true);
+                const result = await this.paperlessCommunication?.sendGlobalSearchQuery(query);
+                await this.setIdle();
+                this.sendTo(
+                    obj.from,
+                    obj.command,
+                    result || { ok: false, error: 'Adapter is not ready' },
+                    obj.callback,
+                );
+                return;
+            }
+
+            if (obj.command === 'dashboardSearch') {
+                const message = obj.message || {};
+                const normalizeTagIds = value =>
+                    (Array.isArray(value) ? value : [])
+                        .map(Number)
+                        .filter(value => Number.isInteger(value) && value > 0);
+                const query = typeof message.query === 'string' ? message.query : '';
+                const tags = normalizeTagIds(message.tags);
+                const blockedTags = normalizeTagIds(message.blockedTags);
+                const allTags = message.allTags !== false;
+
+                await this.setStateAsync('search.documents.query', query, true);
+                await this.setStateAsync('search.documents.queryTags', JSON.stringify(tags), true);
+                await this.setStateAsync('search.documents.queryBlockedTags', JSON.stringify(blockedTags), true);
+                await this.setStateAsync('search.documents.queryAllTags', allTags, true);
+
+                const result = await this.paperlessCommunication?.sendDocumentsSearchQuery(
+                    query,
+                    tags,
+                    blockedTags,
+                    allTags,
+                );
+                await this.setIdle();
+                this.sendTo(
+                    obj.from,
+                    obj.command,
+                    result || { ok: false, error: 'Adapter is not ready' },
+                    obj.callback,
+                );
+                return;
+            }
+
+            if (obj.command === 'dashboardRefresh') {
+                if (this.paperlessCommunication?.inProgress.readData) {
+                    this.sendTo(obj.from, obj.command, { ok: false, busy: true }, obj.callback);
+                    return;
+                }
+                const connected = await this.paperlessCommunication?.checkConnection();
+                await this.setStateAsync('info.connection', connected === true, true);
+                if (!connected) {
+                    this.sendTo(
+                        obj.from,
+                        obj.command,
+                        { ok: false, error: 'Paperless is not reachable' },
+                        obj.callback,
+                    );
+                    return;
+                }
+                await this.paperlessCommunication?.readActualData();
+                await this.setIdle();
+                this.sendTo(obj.from, obj.command, { ok: true }, obj.callback);
+            }
+        } catch (error) {
+            this.log.error(`Dashboard command ${obj.command} failed: ${error}`);
+            this.sendTo(obj.from, obj.command, { ok: false, error: error.message || String(error) }, obj.callback);
         }
     }
 
