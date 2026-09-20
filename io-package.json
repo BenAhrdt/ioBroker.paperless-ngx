@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "news": {
+      "1.0.3": {
+        "en": "Add a Paperless-styled Admin tab with global and document search, tag filters, metadata browsing, refresh controls, and a direct Paperless link.\nEncode search parameters safely, acknowledge requests when Paperless is unavailable, retry connections on the configured cycle, and remove duplicate object cleanup work.",
+        "de": "Fügen Sie einen Admin-Tab im Paperless-Stil mit globaler Dokumentsuche, Tagfiltern, Metadaten und direktem Paperless-Link hinzu.\nSuchparameter sicher verschlüsseln, Anfragen bestätigen, wenn Paperless nicht verfügbar ist, versuchen Sie erneut Verbindungen und entfernen Sie doppelte Objekte.",
+        "ru": "Добавьте вкладку администратора в стиле Paperless с глобальным поиском и поиском документов, фильтрами тегов, просмотром метаданных, элементами управления обновлением и прямой ссылкой на Paperless.\nБезопасно кодируйте параметры поиска, подтверждайте запросы, когда Paperless недоступен, повторите подключение в настроенном цикле и устраните дубликаты операций по очистке объектов.",
+        "pt": "Adicione uma guia Admin com pesquisa global e de documentos, filtros de tags, metadados, controles de atualização e um link direto.\nCodifique parâmetros de busca com segurança, confirme solicitações sem o Paperless, repita conexões no ciclo configurado e remova objetos duplicados.",
+        "nl": "Voeg een beheerderstabblad in Papierloze stijl toe met globaal zoeken en zoeken naar documenten, tagfilters, browsen in metagegevens, vernieuwingsopties en een directe Paperless-link.\nCodeer de zoekparameters op een veilige manier, bevestig aanvragen wanneer Paperless niet beschikbaar is, probeer verbindingen opnieuw uit te voeren volgens de geconfigureerde cyclus en verwijder dubbel werk bij het opschonen van objecten.",
+        "fr": "Ajoutez un onglet Admin de style Paperless avec recherche globale et documentaire, filtres par tag, méta-données, actualisation et lien direct vers Paperless.\nEncodez les paramètres de recherche en toute sécurité, accèdez aux demandes lorsque Paperless n'est pas disponible, relancez les connexions selon le cycle configuré et supprimez les doublons.",
+        "it": "Aggiunga una scheda Admin in stile Paperless con ricerca globale e di documenti, filtri per tag, metadati, refresh e link Paperless diretto.\nCodifica i parametri di ricerca in modo sicuro, conferma le richieste quando Paperless non è disponibile, riprova le connessioni e rimuove gli oggetti duplicati.",
+        "es": "Añada una pestaña de administración sin papel con búsqueda global y de documentos, filtros de etiquetas, búsqueda de metadatos, controles de actualización y un enlace directo.\nCodifique los parámetros de búsqueda de forma segura, confirme las solicitudes cuando Paperless no esté disponible, reintente las conexiones en el ciclo configurado y elimine los objetos duplicados.",
+        "pl": "Dodaj kartę Administrator w stylu papieru z wyszukiwaniem globalnym i dokumentowym, filtrami tagów, przeglądaniem metadanych, kontrolkami odświeżania i bezpośrednim łączem Paperless.\nBezpiecznie koduj parametry wyszukiwania, potwierdź żądania, gdy Paperless jest niedostępny, spróbuj ponownie połączeń w skonfigurowanym cyklu i usuwaj zduplikowane zadania czyszczenia obiektów.",
+        "uk": "Додайте вкладку адміністратора у стилі Paperless з глобальним пошуком та пошуком документів, фільтрами тегів, переглядом метаданих, елементами керування оновленням та прямим безпаперовим посиланням.\nБезпечно кодуйте параметри пошуку, підтверджуйте запити, коли Paperless недоступний, повторіть спробу підключення у налаштованому циклі та видаліть дублікати роботи з очищення об'єктів.",
+        "zh-cn": "添加无纸化风格的管理选项卡，其中包含全局和文档搜索、标签筛选器、元数据浏览、刷新控件以及直接的无纸化链接。\n安全地对搜索参数进行编码，在 Paperless 不可用时确认请求，在配置的周期内重试连接，并删除重复的对象清理工作。"
+      },
       "1.0.2": {
         "en": "Prevent adapter startup failure when no Paperless server is configured",
         "de": "Verhindern von Startfehlern des Adapters, wenn kein Paperless-Server konfiguriert ist",
