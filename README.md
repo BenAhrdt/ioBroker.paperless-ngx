@@ -25,8 +25,11 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):
-	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+- (BenAhrdt) Update `@iobroker/testing` to version 6.3.1.
+
 ### 1.0.3 (2026-09-20)
 
 - Add a Paperless-styled Admin tab with global and document search, tag filters, metadata browsing, refresh controls, and a direct Paperless link.
