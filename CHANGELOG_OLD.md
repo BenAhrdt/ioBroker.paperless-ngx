@@ -1,4 +1,7 @@
 # Older changes
+## 0.5.1 (2026-02-28)
+* (BenAhrdt) update dependencies
+
 ## 0.5.0 (2025-10-19)
 * (BenAhrdt) update Authentication NPM
 * (BenAhrdt) update test to resolve conflicts

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "news": {
+      "1.0.4": {
+        "en": "Update `@iobroker/testing` to version 6.3.1.\nadd dark mode",
+        "de": "Update @iobroker /testing auf Version 6.3.1.\nAdd Dark Mode",
+        "ru": "Обновите `@iobroker /testing` до версии 6.3.1.\nдобавить темный режим",
+        "pt": "Atualize `@iobroker /testing` para 6.3.1.\naditar modo escuro",
+        "nl": "Update `@iobroker /testing` naar versie 6.3.1.\ndonkere modus toevoegen",
+        "fr": "Passez à la version 6.3.1 de @iobroker /testing.\najouter le mode noir",
+        "it": "Aggiorna `@iobroker /testing` alla 6.3.1.\naggiunga buio",
+        "es": "Actualice `@iobroker /testing` a la versión 6.3.1\nañadir modo oscuro",
+        "pl": "Zaktualizuj `@iobroker /testing` do wersji 6.3.1.\ndodaj tryb ciemny",
+        "uk": "Оновіть `@iobroker /testing` до версії 6.3.1.\nдодати темний режим",
+        "zh-cn": "将 @iobroker /testing 更新到版本 6.3.1。\n添加暗黑模式"
+      },
       "1.0.3": {
         "en": "Add a Paperless-styled Admin tab with global and document search, tag filters, metadata browsing, refresh controls, and a direct Paperless link.\nEncode search parameters safely, acknowledge requests when Paperless is unavailable, retry connections on the configured cycle, and remove duplicate object cleanup work.",
         "de": "Fügen Sie einen Admin-Tab im Paperless-Stil mit globaler Dokumentsuche, Tagfiltern, Metadaten und direktem Paperless-Link hinzu.\nSuchparameter sicher verschlüsseln, Anfragen bestätigen, wenn Paperless nicht verfügbar ist, versuchen Sie erneut Verbindungen und entfernen Sie doppelte Objekte.",
@@ -80,19 +93,6 @@
         "pl": "dodaj timeout do konfiguracji",
         "uk": "додати тайм-аут до конфігурації",
         "zh-cn": "添加超时到配置"
-      },
-      "0.4.3": {
-        "en": "added more debug logging",
-        "de": "mehr debug protokollierung",
-        "ru": "добавить больше рубок",
-        "pt": "adicionado mais registro de depuração",
-        "nl": "toegevoegd meer debug logging",
-        "fr": "plus de débogage",
-        "it": "aggiunto più debug logging",
-        "es": "añadido más registro de depuración",
-        "pl": "dodano więcej logowania debugowania",
-        "uk": "доданий більш дебатний каротаж",
-        "zh-cn": "添加更多调试日志"
       }
     },
     "titleLang": {

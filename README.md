@@ -26,7 +26,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 <!--
 	Placeholder for the next version (at the beginning of the line):
 -->
-### **WORK IN PROGRESS**
+### 1.0.4 (2026-10-25)
 - (BenAhrdt) Update `@iobroker/testing` to version 6.3.1.
 - (arteck) add dark mode
 
@@ -43,9 +43,6 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 
 ### 1.0.0 (2026-04-03)
 * (BenAhrdt) change axios to fetch
-
-### 0.5.1 (2026-02-28)
-* (BenAhrdt) update dependencies
 
 [Older changelogs can be found there](CHANGELOG_OLD.md)
 
