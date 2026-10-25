@@ -32,6 +32,10 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 
 ### 1.0.3 (2026-09-20)
 
+### **WORK IN PROGRESS**
+- (arteck) add dark mode
+
+
 - Add a Paperless-styled Admin tab with global and document search, tag filters, metadata browsing, refresh controls, and a direct Paperless link.
 - Encode search parameters safely, acknowledge requests when Paperless is unavailable, retry connections on the configured cycle, and remove duplicate object cleanup work.
 
