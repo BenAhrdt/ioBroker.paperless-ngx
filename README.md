@@ -27,6 +27,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 	Placeholder for the next version (at the beginning of the line):
 -->
 ### **WORK IN PROGRESS**
+
 - (BenAhrdt) Update `@iobroker/testing` to version 6.3.1.
 - (arteck) add dark mode
 
