@@ -81,6 +81,10 @@
             previous: 'Zurück',
             next: 'Weiter',
             page: 'Seite',
+            themeDark: 'Dunkel',
+            themeLight: 'Hell',
+            switchToDark: 'Dunkles Design aktivieren',
+            switchToLight: 'Helles Design aktivieren',
         },
         en: {
             home: 'Home',
@@ -144,11 +148,16 @@
             previous: 'Previous',
             next: 'Next',
             page: 'Page',
+            themeDark: 'Dark',
+            themeLight: 'Light',
+            switchToDark: 'Enable dark theme',
+            switchToLight: 'Enable light theme',
         },
     };
 
     const language = (navigator.language || 'de').toLowerCase().startsWith('de') ? 'de' : 'en';
     const t = key => strings[language][key] || strings.en[key] || key;
+    const themeToggle = document.getElementById('theme-toggle');
     const pageContent = document.getElementById('page-content');
     const connectionPill = document.getElementById('connection-pill');
     const connectionText = document.getElementById('connection-text');
@@ -158,6 +167,24 @@
     const paperlessLink = document.getElementById('paperless-link');
     const numberFormat = new Intl.NumberFormat(language);
     const socket = window.io ? window.io.connect(window.location.origin) : null;
+
+    function setTheme(theme, persist = false) {
+        const isDark = theme === 'dark';
+        document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+        themeToggle.querySelector('.theme-icon').textContent = isDark ? '☼' : '☾';
+        themeToggle.querySelector('.theme-label').textContent = t(isDark ? 'themeLight' : 'themeDark');
+        const label = t(isDark ? 'switchToLight' : 'switchToDark');
+        themeToggle.setAttribute('aria-label', label);
+        themeToggle.title = label;
+        if (persist) {
+            window.localStorage.setItem('paperless-ngx.adminTab.theme', isDark ? 'dark' : 'light');
+        }
+    }
+
+    setTheme(window.localStorage.getItem('paperless-ngx.adminTab.theme') === 'dark' ? 'dark' : 'light');
+    themeToggle.addEventListener('click', () => {
+        setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    });
 
     let namespace = '';
     let baseUrl = '';
