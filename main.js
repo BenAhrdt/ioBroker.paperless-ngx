@@ -11,6 +11,7 @@ const utils = require('@iobroker/adapter-core');
 // Load your modules here, e.g.:
 const paperlesscommunicationClass = require('./lib/modules/paperlessCommunication');
 const schedule = require('node-schedule');
+const { COMMANDS, HELP } = require('./lib/help');
 
 class PaperlessNgx extends utils.Adapter {
     /**
@@ -179,6 +180,11 @@ class PaperlessNgx extends utils.Adapter {
 
     async onMessage(obj) {
         if (!obj || !obj.callback) {
+            return;
+        }
+
+        if (obj.command === 'help') {
+            this.sendTo(obj.from, obj.command, { help: HELP, commands: COMMANDS }, obj.callback);
             return;
         }
 
