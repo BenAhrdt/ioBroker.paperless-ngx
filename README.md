@@ -22,10 +22,16 @@ set the following data to login to the instance:
 select the refresh cycle and the type of reading data: (without, basic oder detailed)
 ![alt text](image-1.png)
 
+## Messages for scripts and AI agents
+`sendTo('paperless-ngx.0', 'help', {}, answer => ...)` returns a description of all messages (document search, global search, refresh, info) for AI agents (e.g. ioBroker.pi-agent) and scripts: `{ help, commands }`, where `commands` lists every message with `write: true` if it changes something.
+
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):
 -->
+### **WORK IN PROGRESS**
+- (@GermanBluefox) Added the message "help": a description of all messages for AI agents (e.g. pi-agent), and common.supportedMessages.help
+
 ### 1.0.4 (2026-10-25)
 - (BenAhrdt) Update `@iobroker/testing` to version 6.3.1.
 - (arteck) add dark mode

@@ -159,6 +159,10 @@
       }
     ],
     "messagebox": true,
+    "supportedMessages": {
+      "help": true,
+      "custom": true
+    },
     "adminTab": {
       "name": {
         "en": "Paperless",
