@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "paperless-ngx",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "news": {
+      "1.0.5": {
+        "en": "Added the message \"help\": a description of all messages for AI agents (e.g. pi-agent), and common.supportedMessages.help",
+        "de": "Nachricht „help“ hinzugefügt: Beschreibung aller Nachrichten für KI-Agenten (z. B. pi-agent) und common.supportedMessages.Help",
+        "ru": "Добавлено сообщение «help»: описание всех сообщений для агентов искусственного интеллекта (например, pi-agent) и common.supportedMessages.help",
+        "pt": "Adicionou a mensagem “help”: uma descrição de todas as mensagens dos agentes de IA (p. ex. pi-agent) e common.supportedMessages.help",
+        "nl": "Het bericht „help” toegevoegd: een beschrijving van alle berichten voor AI-agenten (bijv. pi-agent) en Common.SupportedMessages.help",
+        "fr": "Ajout du message « help » : description de tous les messages des agents IA (p.ex. pi-agent) et common.supportedMessages.help",
+        "it": "Aggiunto «help»: una descrizione di tutti i messaggi per gli agenti AI (ad es. pi-agent) e common.supportedmessages.help",
+        "es": "Añadió el mensaje «help»: una descripción de todos los mensajes de los agentes de IA (p. ej. pi-agent) y common.SupportedMessages.Help",
+        "pl": "Dodano komunikat „help”: opis wszystkich wiadomości dla agentów AI (np. pi-agent) oraz common.supportedMessages.help",
+        "uk": "Додано повідомлення «help»: опис всіх повідомлень для агентів AI (наприклад, pi-agent) та common.supportedMessages.help",
+        "zh-cn": "添加了 “帮助” 消息：对 AI 代理（例如 pi-agent）的所有消息的描述，以及 common.supportedMessages.Help"
+      },
       "1.0.4": {
         "en": "Update `@iobroker/testing` to version 6.3.1.\nadd dark mode",
         "de": "Update @iobroker /testing auf Version 6.3.1.\nAdd Dark Mode",
@@ -80,19 +93,6 @@
         "pl": "aktualizacja Uwierzytelnianie NPM\nuaktualnić test w celu rozwiązania konfliktów\naktualizacja badania 5.1.1\nupdate dependencie core\naktualizacja zależnego do węzła > = 20\naktualizacja testów do 24.x",
         "uk": "оновлення аутентифікації NPM\nоновлення тесту для вирішення конфліктів\nтестування оновлення 5.1.1\nоновлення значення залежностей\nоновлення залежності до вершини >= 20 хв\nтестування оновлення до 24.x",
         "zh-cn": "更新认证国家预防机制\n解决冲突的更新测试\n更新测试 5.1.1\n更新依赖核心\n更新依赖到节点qq 20 (简体中文)\n更新测试为 24.x"
-      },
-      "0.4.4": {
-        "en": "add timeout to config",
-        "de": "zeitout hinzufügen",
-        "ru": "добавить тайм-аут в конфигурацию",
-        "pt": "adicionar tempo limite para config",
-        "nl": "timeout toevoegen aan config",
-        "fr": "ajouter timeout à la configuration",
-        "it": "aggiungere timeout alla configurazione",
-        "es": "agregar tiempo a config",
-        "pl": "dodaj timeout do konfiguracji",
-        "uk": "додати тайм-аут до конфігурації",
-        "zh-cn": "添加超时到配置"
       }
     },
     "titleLang": {
