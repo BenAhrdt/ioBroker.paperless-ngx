@@ -28,6 +28,7 @@ select the refresh cycle and the type of reading data: (without, basic oder deta
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
 - (@GermanBluefox) Added the message "help": a description of all messages for AI agents (e.g. pi-agent), and common.supportedMessages.help
